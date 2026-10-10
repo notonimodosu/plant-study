@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#355c3a"><title>2級植物｜主要な双子葉類の科 86〜89｜20問 v1</title>
+<style>
+:root{--ink:#203025;--muted:#6a776b;--green:#355c3a;--light:#eef4ec;--line:#dde5d9;--surface:#fff;--bg:#f4f7f1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.5}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:12px 16px 11px}header .inner{max-width:720px;margin:auto}h1{font-size:19px;margin:0;font-weight:900;letter-spacing:.015em}.subtitle{color:var(--muted);font-size:12px;margin-top:3px}
+main{max-width:720px;margin:auto;padding:14px 12px 70px}section,.box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px;margin-bottom:12px;box-shadow:0 5px 24px #1f3c2210}
+.toolbar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field label{display:block;color:#516552;font-size:12px;font-weight:800;margin-bottom:5px}.field select{width:100%;min-width:0;appearance:auto}
+select,button{font:inherit;border:1px solid #cbd8c9;border-radius:11px;padding:11px 10px;background:#fff;color:var(--ink);max-width:100%}button{cursor:pointer;touch-action:manipulation}button:hover:not(:disabled){filter:brightness(.97)}button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #6da379;outline-offset:2px}
+.primary{background:var(--green);color:#fff;border-color:var(--green);font-weight:900}.secondary{background:#edf4ea;font-weight:800;border-color:#d3e3d0}.ghost{background:#fff;color:#435a48;font-weight:750}.controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.controls button:first-child{flex:2;min-width:170px}.controls button:nth-child(2){flex:1;min-width:130px}
+.note{font-size:12px;color:var(--muted);margin-top:8px}.progresshead{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:13px;font-weight:800;color:#506a54}.progress{height:9px;background:#e4ede1;border-radius:99px;overflow:hidden;margin-top:9px}.bar{height:100%;width:0;background:#4f8258;transition:width .2s}
+.quiz{padding:16px}.meta{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:850;color:#547055;gap:10px}.illustration{height:260px;margin:15px 0 8px;border-radius:14px;background:#f7f9f5;display:flex;align-items:center;justify-content:center;overflow:hidden}.illustration svg{max-width:100%;max-height:100%;width:100%;height:100%}.question{font-weight:900;font-size:23px;line-height:1.55;text-align:center;min-height:100px;display:block;margin:5px 0 14px;overflow-wrap:anywhere}.full{width:100%}.reveal{font-size:16px;padding:15px 8px}.answer{border-top:1px solid var(--line);padding-top:15px;margin-top:14px}.answerTitle{font-size:12px;color:var(--muted);font-weight:800}.answerBody{font-size:23px;line-height:1.5;font-weight:900;overflow-wrap:anywhere;margin-top:3px}.explanation{font-size:13px;color:#64736a;line-height:1.7;margin-top:8px}
+.rate{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:14px}.rate button{font-size:15px;font-weight:850;min-height:54px;padding:10px 4px}.r0{background:#fff0f0;border-color:#f0caca}.r1{background:#edf7ed;border-color:#bcd8be}
+.statsrow{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:13px}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.chip{background:#edf3eb;border-radius:99px;padding:6px 10px;font-size:12px;font-weight:750;color:#37543b}.chip.x{background:#fff0f0;color:#8b4545}.chip.ok{background:#ecf5e8;color:#366b3d}
+.result{text-align:center}.result .eyebrow{font-size:13px;color:var(--muted);font-weight:750}.result .huge{font-size:30px;font-weight:950;margin:8px 0 6px}.result .substat{line-height:1.8;color:#4e6252;font-size:14px}.result .actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:14px}.result .actions button{width:100%;font-weight:800}.breakdown{border-top:1px solid var(--line);margin-top:12px;padding-top:10px;font-size:13px;color:#4c5d50;line-height:1.8}
+.empty{padding:28px 12px;text-align:center;color:#536553;font-size:15px;line-height:1.7}.empty strong{display:block;margin-bottom:8px;color:var(--ink);font-size:20px}
+summary{cursor:pointer;font-weight:850;font-size:14px}.backupdesc{font-size:12px;color:var(--muted);margin:8px 0 12px}.backupbuttons{display:flex;flex-wrap:wrap;gap:8px}.backupbuttons button{flex:1;min-width:140px;font-size:13px;font-weight:800}.importLabel{position:relative;flex:1;min-width:150px}.importLabel input{position:absolute;width:1px;height:1px;opacity:0;left:0;bottom:0}.importLabel span{display:block;text-align:center;border:1px solid #cbd8c9;border-radius:11px;padding:11px 8px;font-size:13px;font-weight:800;cursor:pointer}.tips{font-size:12px;color:#69766d;line-height:1.75;margin-top:10px}.hide{display:none!important}
+@media(max-width:480px){main{padding:10px 10px 40px}section,.box{padding:12px;margin-bottom:10px}.quiz{padding:12px}.toolbar{gap:8px}.field label{font-size:11px}.field select{padding:10px 6px;font-size:13px}.question{font-size:21px;min-height:95px}.illustration{height:225px}.answerBody{font-size:21px}.rate button{font-size:13px}.result .huge{font-size:27px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar{transition:none}}
+
+/* 独立した設定画面と問題画面 */
+.screen{width:100%}.welcome{padding:19px 19px 16px;background:linear-gradient(125deg,#edf5e8,#ffffff)}
+.overline{font-size:11px;color:#537c59;font-weight:900;letter-spacing:.1em}
+.welcome h2{margin:5px 0 4px;font-size:23px;line-height:1.3}.welcome p{margin:0;color:var(--muted);font-size:13px}
+.beginButton{display:block;width:100%;margin-top:17px;padding:16px 14px;border-radius:14px;font-size:18px}
+.setupCard .note{line-height:1.7;margin-top:12px}.dangerButton{width:100%;color:#933;border-color:#edcccc;background:#fff8f8;margin-top:17px;font-size:13px;font-weight:750}
+.studyTop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:3px 1px 12px}
+.backButton{flex:none;background:#fff;color:#355c3a;border:1px solid #cbd8c9;border-radius:99px;font-size:13px;font-weight:850;padding:10px 14px}
+.studySetting{font-size:12px;line-height:1.45;text-align:right;color:#607367;min-width:0;overflow-wrap:anywhere}
+.returnButton{margin-top:18px}.studyHelp{color:#6a776b;font-size:12px;padding:4px 9px 12px;margin-bottom:30px}.studyHelp summary{font-size:12px}.studyHelp p{margin:9px 0 0;line-height:1.7}
+@media(max-width:480px){.toolbar{grid-template-columns:1fr 1fr;gap:11px}.welcome h2{font-size:21px}.studyTop{align-items:flex-start}.studySetting{max-width:50%;font-size:11px}.backButton{padding:9px 11px}.field select{min-height:47px}.beginButton{font-size:17px}}
+
+/* 問題間ナビゲーション：設定画面とは分離 */
+.questionNav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.questionNav button{font-size:15px;font-weight:850;min-height:49px;padding:10px 7px;background:#f5f8f3}
+.questionNav button:disabled{opacity:.42;cursor:default}
+.rate button.selected{outline:3px solid #446e48;outline-offset:1px}
+@media(max-width:480px){.questionNav button{font-size:14px}}
+
+/* v7: 学習中は本文の上をすっきり、操作ボタンは画面下に常駐 */
+body.study-active header{display:none}
+body.study-active main{padding:7px 10px calc(28px + env(safe-area-inset-bottom, 0px));max-width:720px}
+.studyTop{display:flex;align-items:center;gap:12px;margin:0 0 8px;padding:0 3px}
+.studyTop .backButton{font-size:12px;padding:7px 12px;min-height:36px;white-space:nowrap}
+.compactProgress{flex:1;min-width:0}
+.compactProgress .progresshead{font-size:12px;gap:5px}
+.compactProgress .progress{height:5px;margin-top:4px}
+body.study-active section.quiz{padding:11px 12px 13px;margin-bottom:7px;border-radius:16px}
+body.study-active .meta{font-size:11px;gap:5px}
+body.study-active .illustration{height:clamp(120px,20dvh,160px);margin:8px 0 6px;border-radius:11px}
+body.study-active .question{font-size:21px;line-height:1.55;min-height:0;margin:4px 0 9px;padding:10px 0}
+body.study-active .reveal{padding:11px 8px;font-size:15px;min-height:44px}
+body.study-active .answer{padding-top:8px;margin-top:8px}
+body.study-active .answerTitle{font-size:11px}
+body.study-active .answerBody{font-size:21px;line-height:1.4;margin-top:2px}
+body.study-active .explanation{font-size:12px;line-height:1.5;margin-top:4px}
+.actionDock{position:static;transform:none;width:100%;z-index:auto;padding:0;margin-top:10px;background:transparent;border:0;border-radius:0;box-shadow:none;display:flex;flex-direction:column;gap:8px}
+.actionDock .rate{margin-top:0;gap:7px}
+.actionDock .rate button{min-height:50px;padding:8px 3px;font-size:14px}
+.actionDock .questionNav{margin-top:0;gap:7px}
+.actionDock .questionNav button{min-height:40px;padding:7px 6px;font-size:13px}
+body.study-active #resultPanel,body.study-active #emptyPanel{margin-top:12px}
+body.study-active .studyHelp{margin-top:10px}
+@media(max-width:480px){
+ body.study-active main{padding:6px 9px calc(24px + env(safe-area-inset-bottom,0px))}
+ .studyTop{align-items:center;margin-bottom:7px}
+ body.study-active .question{font-size:20px;line-height:1.55}
+ body.study-active .answerBody{font-size:20px}
+ .actionDock .rate button{font-size:13px}
+}
+@media(max-height:680px){body.study-active .illustration{height:clamp(105px,19dvh,135px)}body.study-active .question{font-size:19px}}
+ruby{display:ruby;white-space:nowrap;ruby-position:over}rt{font-size:.45em;font-weight:600;line-height:1} .question ruby{white-space:nowrap}
+</style></head>
+<body><header><div class="inner"><h1>2級植物｜主要な双子葉類の科 86〜89</h1><div class="subtitle">生物分類技能検定2級・植物　｜　全20問　｜　10問・20問区切り・間違い復習対応</div></div></header>
+<main>
+<!-- ① 設定専用ページ：学習開始までは問題を表示しない -->
+<div id="setupScreen" class="screen">
+  <section class="welcome" aria-label="学習の準備">
+    <div class="overline">学習メニュー</div>
+    <h2>今日の学習を設定</h2>
+    <p>範囲と出題方法を選んで開始しましょう。</p>
+  </section>
+  <section class="setupCard" aria-label="問題の設定">
+    <div class="toolbar">
+      <div class="field"><label for="level">学習する範囲</label><select id="level"><option value="all">86〜89 全範囲（20問）</option><option value="No.86">No.86｜ブナ科の識別</option><option value="No.87">No.87｜マメ科の識別</option><option value="No.88">No.88｜キク科の識別</option><option value="No.89">No.89｜シソ科・アブラナ科など</option></select></div>
+      <div class="field"><label for="mode">出題モード</label><select id="mode"><option value="all">すべての問題</option><option value="new">未学習の問題を優先</option><option value="wrong">×だけ復習</option></select></div>
+      <div class="field"><label for="order">出題順</label><select id="order"><option value="shuffle">シャッフル</option><option value="normal">順番どおり</option><option value="weak">×を優先</option></select></div>
+      <div class="field"><label for="batch">区切り</label><select id="batch"><option value="10">10問ずつ解く</option><option value="20">20問ずつ解く</option><option value="all">全問まとめて解く</option></select></div>
+    </div>
+    <button class="primary beginButton" id="start" type="button">学習を開始 <span aria-hidden="true">→</span></button>
+    <div class="note">評価（○・×）は自動で保存されます。問題の途中でも設定に戻れます。</div>
+  </section>
+  <section aria-label="これまでの学習状況" class="setupStats"><div class="statsrow"><b>学習状況（全20問）</b><span id="stats"></span></div><div id="chips" class="chips"></div><div class="tips">「×だけ復習」は最新評価が×の問題を出題します。</div></section>
+  <section class="manager" aria-label="学習記録の管理"><details><summary>学習記録の保存・リセット</summary><div class="backupdesc">評価はこのブラウザ内に自動保存されます。端末やブラウザを変える場合は記録ファイル（JSON）を書き出し、移動先で読み込んでください。</div><div class="backupbuttons"><button id="export" type="button" class="secondary">評価記録を書き出す</button><label class="importLabel"><input id="import" type="file" accept="application/json,.json"><span>評価記録を読み込む</span></label></div><div class="note" id="backupMessage" role="status"></div><button class="dangerButton" id="reset" type="button">すべての評価をリセット</button></details></section>
+  <details class="studyHelp"><summary>操作のヒント</summary><p>「前の問題」「次の問題」ボタンで移動できます（次へ進むには評価が必要です）。戻った問題は答えと前回の評価を表示し、修正もできます。キーボードは←・→で移動／スペースで答えを表示／答えの表示後に1＝×、2＝○。図は形態識別に役立つ問題だけ表示します。図中の名称は解答後に表示します。今回は主要な双子葉類の科の文章問題20問を収録しています。</p></details>
+</div>
+<!-- ② 問題専用ページ：設定項目は隠し、問題と進捗に集中できる -->
+<div id="studyScreen" class="screen hide">
+  <div class="studyTop">
+    <button id="backToSetup" class="backButton" type="button">← 設定</button>
+    <div class="compactProgress" aria-label="進捗">
+      <div class="progresshead"><span id="progressText">0 / 0問</span><span id="totalProgress">0%</span></div>
+      <div class="progress" role="progressbar" aria-label="選択した問題全体の進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressTrack"><div class="bar" id="bar"></div></div>
+    </div>
+    <span id="studySetting" class="hide"></span>
+  </div>
+  <section class="quiz" id="quiz"><div class="meta"><span id="tag"></span><span id="counter"></span></div><div id="visual" class="illustration"></div><div id="question" class="question" aria-live="polite"></div><button class="primary full reveal" id="show" type="button">答えを見る</button><div class="answer hide" id="answer"><div class="answerTitle">答え</div><div class="answerBody" id="ans"></div><div class="explanation" id="explanation"></div></div><div id="actionDock" class="actionDock hide" aria-label="問題の操作">
+    <div id="rate" class="rate hide"><button class="r0" data-r="0" type="button">× むずかしい</button><button class="r1" data-r="1" type="button">○ わかった</button></div>
+    <div class="questionNav" aria-label="問題の移動"><button id="prevQuestion" type="button" aria-label="前の問題へ戻る">← 前の問題</button><button id="nextQuestion" type="button" aria-label="次の問題へ進む">次の問題 →</button></div>
+  </div><div id="instruction" class="hide"></div></section>
+  <section id="emptyPanel" class="empty hide" aria-live="polite"><strong id="emptyTitle"></strong><span id="emptyDescription"></span><button id="emptyBack" class="secondary full returnButton" type="button">設定に戻る</button></section>
+  <section id="resultPanel" class="result hide" aria-live="polite"><div class="eyebrow" id="resultEyebrow">今回の結果</div><div class="huge" id="resultBig"></div><div class="substat" id="resultSub"></div><div class="breakdown" id="breakdown"></div><div class="actions"><button id="reviewLast" class="ghost" type="button">← 最後の問題を見直す</button><button id="nextBatch" class="secondary hide" type="button">次の問題へ →</button><button id="retry" class="primary" type="button">もう一度最初から</button><button id="finishBack" class="ghost" type="button">設定に戻る</button></div></section>
+  
+</div>
+</main>
+<script>
+const CARDS=[{"id":"p086_1","level":"No.86","unit":"ブナ科の識別","q":"ブナ科の果実の型は？","a":"堅果。","note":"ブナ科の識別の重要事項。問いに対して「堅果。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p086_2","level":"No.86","unit":"ブナ科の識別","q":"ドングリの基部を包む殻状・杯状の構造は？","a":"殻斗。","note":"ブナ科の識別の重要事項。問いに対して「殻斗。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p086_3","level":"No.86","unit":"ブナ科の識別","q":"ブナ科の花の性は一般にどのような構成が多い？","a":"雌雄異花・雌雄同株が多い。","note":"ブナ科の識別の重要事項。問いに対して「雌雄異花・雌雄同株が多い。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p086_4","level":"No.86","unit":"ブナ科の識別","q":"コナラ属の学名の属名は？","a":"Quercus。","note":"ブナ科の識別の重要事項。問いに対して「Quercus。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p086_5","level":"No.86","unit":"ブナ科の識別","q":"クリはブナ科・カバノキ科のどちら？","a":"ブナ科。","note":"ブナ科の識別の重要事項。問いに対して「ブナ科。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p087_1","level":"No.87","unit":"マメ科の識別","q":"マメ科に典型的な果実の型は？","a":"豆果。","note":"マメ科の識別の重要事項。問いに対して「豆果。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p087_2","level":"No.87","unit":"マメ科の識別","q":"多くのマメ科で根に共生し窒素固定に関与する細菌は？","a":"根粒菌。","note":"マメ科の識別の重要事項。問いに対して「根粒菌。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p087_3","level":"No.87","unit":"マメ科の識別","q":"蝶形花で大きく目立つ上側の花弁は？","a":"旗弁。","note":"マメ科の識別の重要事項。問いに対して「旗弁。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p087_4","level":"No.87","unit":"マメ科の識別","q":"蝶形花の下側で雄しべ・雌しべを包む2枚の花弁は？","a":"竜骨弁。","note":"マメ科の識別の重要事項。問いに対して「竜骨弁。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p087_5","level":"No.87","unit":"マメ科の識別","q":"マメ科の葉にしばしば見られる形態は？","a":"複葉。","note":"マメ科の識別の重要事項。問いに対して「複葉。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p088_1","level":"No.88","unit":"キク科の識別","q":"キク科の花序で多数の小花が集まり一つの花のように見えるものは？","a":"頭状花序。","note":"キク科の識別の重要事項。問いに対して「頭状花序。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p088_2","level":"No.88","unit":"キク科の識別","q":"キク科で花冠が舌状に伸びる小花は？","a":"舌状花。","note":"キク科の識別の重要事項。問いに対して「舌状花。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p088_3","level":"No.88","unit":"キク科の識別","q":"キク科で筒状の花冠をもつ小花は？","a":"筒状花。","note":"キク科の識別の重要事項。問いに対して「筒状花。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p088_4","level":"No.88","unit":"キク科の識別","q":"キク科の果実の多くは？","a":"痩果（分類上は痩果状の菊果とすることもある）。","note":"キク科の識別の重要事項。問いに対して「痩果（分類上は痩果状の菊果とすることもある）。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p088_5","level":"No.88","unit":"キク科の識別","q":"タンポポの冠毛はもともと花のどの部分に由来する？","a":"萼。","note":"キク科の識別の重要事項。問いに対して「萼。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p089_1","level":"No.89","unit":"シソ科・アブラナ科など","q":"シソ科で多い茎の断面形は？","a":"四角形。","note":"シソ科・アブラナ科などの重要事項。問いに対して「四角形。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p089_2","level":"No.89","unit":"シソ科・アブラナ科など","q":"シソ科の葉の付き方として典型的なのは？","a":"対生。","note":"シソ科・アブラナ科などの重要事項。問いに対して「対生。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p089_3","level":"No.89","unit":"シソ科・アブラナ科など","q":"アブラナ科の花弁は普通何枚？","a":"4枚。","note":"シソ科・アブラナ科などの重要事項。問いに対して「4枚。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p089_4","level":"No.89","unit":"シソ科・アブラナ科など","q":"アブラナ科に典型的な果実は？","a":"長角果・短角果。","note":"シソ科・アブラナ科などの重要事項。問いに対して「長角果・短角果。」を説明できるようにしよう。","kind":"text","media":null},{"id":"p089_5","level":"No.89","unit":"シソ科・アブラナ科など","q":"セリ科で小さな散形花序が集まった花序は？","a":"複散形花序。","note":"シソ科・アブラナ科などの重要事項。問いに対して「複散形花序。」を説明できるようにしよう。","kind":"text","media":null}];
+const SVGS={"grass":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">イネ科</text></svg>","pollen":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">花粉</text></svg>","chloroplast":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">葉緑体</text></svg>","tree":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">系統</text></svg>","venation":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">葉脈</text></svg>","bud":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">芽</text></svg>","root":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">根</text></svg>","phyllotaxy":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">葉序</text></svg>","plant":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">植物体</text></svg>","taxonomy":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">分類</text></svg>","cone":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">裸子植物</text></svg>","stem":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">茎・節</text></svg>","fruit":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">果実</text></svg>","moss":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">コケ</text></svg>","stoma":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">気孔</text></svg>","flower":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">花</text></svg>","margin":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">葉縁</text></svg>","leaf":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">葉</text></svg>","fern":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">シダ</text></svg>","cell":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">植物細胞</text></svg>","seed":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">種子</text></svg>","vascular":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">維管束</text></svg>","compound":"<svg viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M210 220V75M210 150L125 110M210 125L300 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"8\"/>\n    <ellipse cx=\"105\" cy=\"102\" rx=\"48\" ry=\"24\" transform=\"rotate(18 105 102)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <ellipse cx=\"320\" cy=\"82\" rx=\"48\" ry=\"24\" transform=\"rotate(-18 320 82)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <circle cx=\"210\" cy=\"55\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/>\n    <text x=\"210\" y=\"242\" text-anchor=\"middle\" font-size=\"20\" fill=\"currentColor\">複葉</text></svg>"};
+
+const SELECTIVE_VISUALS={"c010":"flower","c011":"flower","c012":"flower","c013":"flower","c036":"flower","c037":"flower","c038":"flower","c040":"flower","c091":"flower","c027":"venation","c028":"venation","c053":"venation","c054":"venation","c055":"root","c056":"root","c067":"root","c068":"root","c069":"root","c070":"root","c110":"root","c113":"root","c057":"vascular","c058":"vascular","c059":"vascular","c060":"vascular","c061":"vascular","c062":"stoma","c063":"stoma","c064":"stoma","c120":"stoma","c121":"stoma","c093":"phyllotaxy","c094":"phyllotaxy","c095":"phyllotaxy","c175":"compound","c176":"compound","c178":"margin","c179":"margin","c181":"grass","c182":"grass","c183":"grass"};
+const SVG2={
+venation:`<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg"><g fill="#dfeedd" stroke="#376345" stroke-width="3"><path d="M108 177C34 129 27 42 108 17C190 45 179 128 108 177Z"/><path d="M324 177C253 127 241 43 324 17C405 42 398 132 324 177Z"/></g><g fill="none" stroke="#538367" stroke-width="2.5"><path d="M108 174V26 M108 73L68 48 M108 95L55 76 M108 122L53 109 M108 73L149 48 M108 95L161 77 M108 122L163 108"/><path d="M324 175V27 M301 154Q283 87 311 32 M348 154Q365 82 336 32 M290 128Q272 73 304 29 M358 128Q376 70 343 29"/></g></svg>`,
+phyllotaxy:`<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg"><g stroke="#345f41" stroke-width="6" fill="none"><path d="M78 178V30M219 178V30M361 178V30"/></g><g fill="#b4d8a9" stroke="#345f41" stroke-width="3"><ellipse cx="113" cy="52" rx="34" ry="13" transform="rotate(-25 113 52)"/><ellipse cx="43" cy="111" rx="34" ry="13" transform="rotate(25 43 111)"/><ellipse cx="182" cy="92" rx="32" ry="13" transform="rotate(25 182 92)"/><ellipse cx="254" cy="92" rx="32" ry="13" transform="rotate(-25 254 92)"/><ellipse cx="323" cy="95" rx="33" ry="13" transform="rotate(25 323 95)"/><ellipse cx="399" cy="95" rx="33" ry="13" transform="rotate(-25 399 95)"/><ellipse cx="364" cy="54" rx="32" ry="13" transform="rotate(-80 364 54)"/></g><g font-size="16" text-anchor="middle" fill="#1d4028"><text x="78" y="196">互生</text><text x="219" y="196">対生</text><text x="361" y="196">輪生（概念図）</text></g></svg>`,
+compound:`<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#345f41" stroke-width="5"><path d="M106 182V55M318 182V30"/></g><g fill="#c8e3bf" stroke="#345f41" stroke-width="3"><path d="M106 166C24 132 28 35 106 12C185 48 187 133 106 166Z"/><ellipse cx="269" cy="53" rx="40" ry="17" transform="rotate(25 269 53)"/><ellipse cx="367" cy="53" rx="40" ry="17" transform="rotate(-25 367 53)"/><ellipse cx="269" cy="101" rx="40" ry="17" transform="rotate(25 269 101)"/><ellipse cx="367" cy="101" rx="40" ry="17" transform="rotate(-25 367 101)"/><ellipse cx="318" cy="23" rx="15" ry="24"/></g><g font-size="17" text-anchor="middle" fill="#1d4028"><text x="106" y="197">単葉</text><text x="318" y="197">複葉</text></g></svg>`,
+margin:`<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg"><path d="M112 176C40 120 30 55 112 13C188 55 181 120 112 176Z" fill="#cae7c2" stroke="#396744" stroke-width="4"/><path d="M328 176L303 162L284 162L289 143L265 129L276 115L258 99L276 87L270 66L293 62L300 43L317 47L328 13L340 47L358 43L366 62L388 66L381 87L398 99L379 115L391 129L366 143L372 162L353 162Z" fill="#cae7c2" stroke="#396744" stroke-width="4"/><g font-size="18" fill="#1d4028" text-anchor="middle"><text x="112" y="196">全縁</text><text x="328" y="196">鋸歯</text></g></svg>`,
+root:`<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#8b6849" stroke-width="4" stroke-linecap="round"><path d="M109 20L109 188 M109 75L70 122L52 146 M109 97L155 137L164 157 M109 136L91 159 M325 25L325 72 M325 72L267 184 M325 72L289 187 M325 72L318 188 M325 72L346 185 M325 72L381 183"/></g><g font-size="17" text-anchor="middle" fill="#34513c"><text x="109" y="18">主根・側根型</text><text x="325" y="18">ひげ根型</text></g></svg>`,
+flower:`<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg"><g stroke="#a85c76" stroke-width="3" fill="#f3cade"><ellipse cx="220" cy="35" rx="25" ry="37"/><ellipse cx="220" cy="128" rx="25" ry="37"/><ellipse cx="164" cy="83" rx="37" ry="25"/><ellipse cx="276" cy="83" rx="37" ry="25"/></g><path d="M220 177V65" stroke="#406f45" stroke-width="9"/><g fill="#e0b147" stroke="#b48735" stroke-width="3"><ellipse cx="188" cy="60" rx="11" ry="16"/><ellipse cx="254" cy="60" rx="11" ry="16"/></g><g fill="#a9dba4" stroke="#406f45" stroke-width="3"><path d="M213 104Q220 96 227 104L237 148Q220 166 203 148Z"/></g><text x="325" y="50" font-size="17" fill="#213c29">葯</text><path d="M263 59L317 47" stroke="#556b55" stroke-width="2"/><text x="325" y="128" font-size="17" fill="#213c29">子房</text><path d="M236 138L315 123" stroke="#556b55" stroke-width="2"/></svg>`,
+vascular:`<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg"><g fill="#e8efd9" stroke="#487354" stroke-width="4"><circle cx="110" cy="95" r="74"/><circle cx="326" cy="95" r="74"/></g><g fill="#a3bca2" stroke="#3b6348" stroke-width="2"><circle cx="110" cy="43" r="13"/><circle cx="159" cy="95" r="13"/><circle cx="110" cy="147" r="13"/><circle cx="59" cy="95" r="13"/><circle cx="292" cy="51" r="13"/><circle cx="355" cy="51" r="13"/><circle cx="283" cy="108" r="13"/><circle cx="349" cy="103" r="13"/><circle cx="320" cy="146" r="13"/></g><g font-size="16" text-anchor="middle" fill="#1d4028"><text x="110" y="195">環状に並ぶ例</text><text x="326" y="195">散在する例</text></g></svg>`,
+stoma:`<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="15" width="400" height="165" rx="28" fill="#e5f1dc" stroke="#5c956c" stroke-width="3"/><path d="M214 29C145 58 153 142 214 167C188 119 187 83 214 29Z" fill="#9dcc9b" stroke="#396b4b" stroke-width="4"/><path d="M226 29C295 58 287 142 226 167C252 119 253 83 226 29Z" fill="#9dcc9b" stroke="#396b4b" stroke-width="4"/><ellipse cx="220" cy="99" rx="13" ry="68" fill="white"/><text x="303" y="104" font-size="17" fill="#234d2c">孔辺細胞</text><path d="M279 113L289 110" stroke="#234d2c" stroke-width="2"/></svg>`,
+grass:`<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg"><path d="M209 184V22" stroke="#558154" stroke-width="14"/><path d="M203 164Q159 92 73 20Q151 31 206 117" fill="#b9d8ab" stroke="#588356" stroke-width="4"/><path d="M217 133Q285 66 373 35Q284 121 222 161" fill="#b9d8ab" stroke="#588356" stroke-width="4"/><path d="M207 94L207 58L225 82Z" fill="#e9ad77" stroke="#986143" stroke-width="2"/><path d="M215 95L234 86 M214 96L193 89" stroke="#986143" stroke-width="4"/><g fill="#24462b" font-size="14"><text x="238" y="75">葉舌</text><text x="241" y="100">葉耳</text><text x="236" y="188">葉鞘</text></g></svg>`,
+};
+
+function svg(kind,m){
+const S=(x)=>`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg">${x}</svg>`;
+const leaf=(cx,cy,rx,ry,rot=0)=>`<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" transform="rotate(${rot} ${cx} ${cy})" fill="#dcebd7" stroke="#355c3a" stroke-width="4"/>`;
+if(kind==="stem"||kind==="stemroot") return S(`<path d="M210 245V25" stroke="#6c7b54" stroke-width="12"/><circle cx="210" cy="75" r="8" fill="#b57a44"/><circle cx="210" cy="145" r="8" fill="#b57a44"/><path d="M210 75L135 42M210 145L290 115" stroke="#6c7b54" stroke-width="8"/>${leaf(120,38,34,16,-20)}${leaf(305,110,34,16,-15)}<text x="230" y="113" font-size="22">節間</text><text x="225" y="70" font-size="22">節</text>`);
+if(kind==="phyllotaxis"){let y=[55,115,175,235],z=`<path d="M210 250V20" stroke="#6c7b54" stroke-width="10"/>`; if(m==="alternate"){y.forEach((yy,i)=>z+=leaf(i%2?270:150,yy,42,19,i%2?-18:18)+`<path d="M210 ${yy}L${i%2?235:185} ${yy}" stroke="#6c7b54" stroke-width="6"/>`)} else if(m==="whorled"){[90,180].forEach(yy=>{z+=leaf(140,yy,40,18,10)+leaf(280,yy,40,18,-10)+leaf(210,yy-38,18,40,0)})} else {y.slice(0,3).forEach((yy,i)=>{let rot=m==="decussate"&&i%2?90:0;z+=leaf(145,yy,40,18,rot)+leaf(275,yy,40,18,rot)})} return S(z);}
+if(kind==="margin"){let p=m==="entire"?"M210 240 C120 210 100 130 130 55 C155 15 190 20 210 30 C230 20 265 15 290 55 C320 130 300 210 210 240Z":"M210 240 L180 225 160 228 155 210 135 205 142 185 122 172 135 155 118 136 135 120 122 98 145 90 140 66 165 66 175 42 195 48 210 28 225 48 245 42 255 66 280 66 275 90 298 98 285 120 302 136 285 155 298 172 278 185 285 205 265 210 260 228 240 225Z"; return S(`<path d="${p}" fill="#dcebd7" stroke="#355c3a" stroke-width="5"/><path d="M210 240V45" stroke="#527c57" stroke-width="5"/>`);}
+if(kind==="venation"){let z=`<path d="M210 240 C120 210 105 120 135 55 C160 20 190 20 210 30 C230 20 260 20 285 55 C315 120 300 210 210 240Z" fill="#dcebd7" stroke="#355c3a" stroke-width="5"/><path d="M210 240V42" stroke="#527c57" stroke-width="5"/>`; if(m==="parallel"){for(let x=155;x<=265;x+=22)z+=`<path d="M${x} 205 Q${x-12} 110 210 42" fill="none" stroke="#6f956f" stroke-width="3"/>`} else if(m==="palmate"){[145,175,245,275].forEach(x=>z+=`<path d="M210 220 Q210 115 ${x} 65" fill="none" stroke="#6f956f" stroke-width="3"/>`)} else {for(let y=75;y<200;y+=28)z+=`<path d="M210 ${y}L145 ${y-20}M210 ${y}L275 ${y-20}" stroke="#6f956f" stroke-width="3"/>`; if(m==="reticulate")z+=`<path d="M150 70Q175 105 150 145Q175 175 155 205M270 70Q245 105 270 145Q245 175 265 205" fill="none" stroke="#6f956f" stroke-width="2"/>`;} return S(z);}
+if(kind==="compound"||kind==="simplecompound"){let z=`<path d="M210 245V45" stroke="#6c7b54" stroke-width="7"/>`; if(m==="palmate"){[[140,80],[170,55],[210,45],[250,55],[280,80]].forEach(([x,y])=>{z+=`<path d="M210 190L${x} ${y+20}" stroke="#6c7b54" stroke-width="5"/>`+leaf(x,y,32,17,(x-210)/4)})} else if(m==="trifoliate"){[[150,85],[210,50],[270,85]].forEach(([x,y])=>{z+=`<path d="M210 175L${x} ${y+18}" stroke="#6c7b54" stroke-width="5"/>`+leaf(x,y,38,20,(x-210)/5)})} else if(m==="lobed"){return S(`<path d="M210 235V180" stroke="#6c7b54" stroke-width="7"/><path d="M210 185 C175 205 120 190 145 145 C100 125 120 80 165 95 C160 45 200 30 210 70 C220 30 260 45 255 95 C300 80 320 125 275 145 C300 190 245 205 210 185Z" fill="#dcebd7" stroke="#355c3a" stroke-width="5"/>`)} else {for(let y=80;y<=190;y+=38){z+=`<path d="M210 ${y}L155 ${y-12}M210 ${y}L265 ${y-12}" stroke="#6c7b54" stroke-width="5"/>`+leaf(140,y-18,31,16,15)+leaf(280,y-18,31,16,-15)} if(m==="odd"||m==="pinnate")z+=leaf(210,45,20,34,0)} return S(z);}
+if(kind==="stipule") return S(`<path d="M210 250V30" stroke="#6c7b54" stroke-width="11"/><path d="M210 165L300 95" stroke="#6c7b54" stroke-width="8"/>${leaf(315,80,55,28,-25)}${leaf(225,155,25,13,-30)}${leaf(195,160,25,13,30)}<text x="80" y="175" font-size="23">← 托葉</text><path d="M165 168L195 160" stroke="#333" stroke-width="3"/>`);
+if(kind==="grass") return S(`<path d="M210 250V25" stroke="#7a9b62" stroke-width="14"/><path d="M210 190Q155 180 145 90" fill="none" stroke="#a9c98e" stroke-width="22"/><path d="M210 190Q265 175 310 85" fill="none" stroke="#a9c98e" stroke-width="15"/><path d="M178 180Q210 155 242 180" fill="none" stroke="#355c3a" stroke-width="5"/><text x="65" y="210" font-size="21">葉鞘</text><text x="255" y="170" font-size="21">葉舌</text>`);
+if(kind==="hair") return S(`<path d="M70 180Q210 70 350 180" fill="#dcebd7" stroke="#355c3a" stroke-width="5"/>${Array.from({length:13},(_,i)=>`<path d="M${90+i*20} ${165-i%3*8}l${-10+i%2*20} -30" stroke="#777" stroke-width="2"/>`).join("")}`);
+if(kind==="gland") return S(`<path d="M70 200Q210 55 350 200" fill="#dcebd7" stroke="#355c3a" stroke-width="5"/>${Array.from({length:22},(_,i)=>`<circle cx="${100+(i*47)%220}" cy="${120+(i*31)%65}" r="4" fill="#8b6a38"/>`).join("")}`);
+if(kind==="thorn") return S(`<path d="M210 245V25" stroke="#6c7b54" stroke-width="12"/><path d="M210 145L310 105" stroke="#6c7b54" stroke-width="9"/><path d="M210 145L285 125L245 150Z" fill="#b58c62" stroke="#6f4c2d" stroke-width="4"/><text x="55" y="150" font-size="22">由来を考える</text>`);
+if(kind==="tendril") return S(`<path d="M120 230Q180 190 190 130Q200 75 245 85Q285 95 265 125Q245 150 230 120Q215 90 255 65" fill="none" stroke="#6c7b54" stroke-width="8"/><text x="115" y="255" font-size="22">巻きひげ</text>`);
+if(kind==="bud") return S(`<path d="M210 250V165" stroke="#6c7b54" stroke-width="13"/><path d="M210 170 C155 145 160 70 210 28 C260 70 265 145 210 170Z" fill="#9c7b57" stroke="#5e4630" stroke-width="5"/><path d="M175 130Q210 95 245 130M180 95Q210 65 240 95" fill="none" stroke="#e2c69c" stroke-width="4"/>`);
+return "";
+}
+
+const VISUAL_IDS=new Set();
+const FLOWER_DIAGRAMS={};
+
+const STORAGE_KEY="botany_topic_86to89_v1";
+const PREV_STORAGE_KEY="botany_topic_86to89_v0";
+function convertRecord(old){const out={}; for(const [id,v] of Object.entries(old||{})){ if(!v||typeof v!=="object") continue;let r=Number(v.rating); if(r===2)r=1;else if(r===0||r===1)r=0;else continue;const key=/^\d+$/.test(id)?`m${String(id).padStart(3,"0")}`:id;out[key]={rating:r,seen:Math.max(0,Number(v.seen)||1),last:Number(v.last)||0}; } return out;}
+
+function stripSvgAnswerLabels(s){return s.replace(/<text\b[^>]*>[\s\S]*?<\/text>/g,"");}
+const el=id=>document.getElementById(id);
+const ui={level:el("level"),mode:el("mode"),order:el("order"),batch:el("batch"),quiz:el("quiz"),empty:el("emptyPanel"),result:el("resultPanel"),tag:el("tag"),counter:el("counter"),visual:el("visual"),question:el("question"),show:el("show"),answer:el("answer"),ans:el("ans"),explanation:el("explanation"),rate:el("rate"),progressText:el("progressText"),totalProgress:el("totalProgress"),bar:el("bar"),progressTrack:el("progressTrack"),stats:el("stats"),chips:el("chips"),resultEyebrow:el("resultEyebrow"),resultBig:el("resultBig"),resultSub:el("resultSub"),breakdown:el("breakdown"),nextBatch:el("nextBatch"),retry:el("retry"),backupMessage:el("backupMessage")};
+let state={};
+try{
+ let raw=localStorage.getItem(STORAGE_KEY);
+ 
+ if(raw){const saved=JSON.parse(raw);if(saved&&typeof saved==="object"&&!Array.isArray(saved))state=saved;}
+}catch(e){}
+let queue=[], pool=[], offset=0, pos=0, correct=0, mistaken=0, answered=0, totalCorrect=0, totalAnswered=0, groups={}, batchSize=10, batchSetting="10";
+let roundScores={}, priorAnswered=0, priorCorrect=0;
+let activeScreen="setup";
+function showScreen(screen){
+ activeScreen=screen;
+ document.body.classList.toggle("study-active",screen==="study");
+ el("setupScreen").classList.toggle("hide",screen!=="setup");
+ el("studyScreen").classList.toggle("hide",screen!=="study");
+ if(screen==="setup")updateStats();
+ window.scrollTo(0,0);
+}
+function beginStudy(){
+ const modes={all:"全問題",new:"未学習優先",wrong:"×だけ"};
+ const lengths={"10":"10問ずつ","20":"20問ずつ",all:"全問"};
+ const lev=ui.level.value==="all"?"全範囲":ui.level.value;
+ el("studySetting").textContent=[lev,modes[ui.mode.value],lengths[ui.batch.value]].join(" · ");
+ rebuild();
+ showScreen("study");
+}
+const currentRating=id=>{const r=state[id]?.rating;return r===0||r===1?r:-1;};
+const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));return true;}catch(e){ui.backupMessage.textContent="ブラウザに保存できません。記録の書き出し機能をご利用ください。";return false;}}
+function updateStats(){
+  const vals=CARDS.map(c=>currentRating(c.id)), done=vals.filter(r=>r>=0).length;
+  const ok=vals.filter(r=>r===1).length,x=vals.filter(r=>r===0).length;
+  ui.stats.textContent=`${done} / ${CARDS.length}問 評価済み`;
+  ui.chips.innerHTML=`<span class="chip ok">○ ${ok}</span><span class="chip x">× ${x}</span><span class="chip">未学習 ${CARDS.length-done}</span>`;
+}
+function updateProgress(n){const pct=queue.length?Math.round(n/queue.length*100):0;
+ ui.progressText.textContent=`${n} / ${queue.length}問 完了`;
+ ui.totalProgress.textContent=`${pct}%`;ui.bar.style.width=pct+"%";ui.progressTrack.setAttribute("aria-valuenow",pct);
+}
+function rebuild(){
+ let a=CARDS.filter(c=>ui.level.value==="all"||c.level===ui.level.value);
+ const mode=ui.mode.value;
+ if(mode==="wrong")a=a.filter(c=>currentRating(c.id)===0);
+ 
+ if(ui.order.value==="shuffle"||ui.order.value==="weak"||mode==="new")shuffle(a);
+ if(ui.order.value==="weak")a.sort((c,d)=>{const p=r=>r===0?0:r===-1?1:2;return p(currentRating(c.id))-p(currentRating(d.id));});
+ if(mode==="new")a.sort((c,d)=>Number(currentRating(c.id)!==-1)-Number(currentRating(d.id)!==-1));
+ queue=a;offset=0;priorAnswered=0;priorCorrect=0;totalAnswered=0;totalCorrect=0;batchSetting=ui.batch.value;batchSize=batchSetting==="all"?queue.length:Math.max(1,Number(batchSetting)||10);startBatch();
+}
+function startBatch(){
+ pool=queue.slice(offset,offset+batchSize);
+ pos=0;correct=0;mistaken=0;answered=0;groups={};roundScores={};
+ ui.quiz.classList.toggle("hide",pool.length===0);
+ el("actionDock").classList.toggle("hide",pool.length===0);
+ ui.empty.classList.toggle("hide",pool.length!==0);
+ ui.result.classList.add("hide");
+ if(!pool.length){
+   const isWrong=ui.mode.value==="wrong";
+   el("emptyTitle").textContent=isWrong?"×の問題はありません":"該当する問題がありません";
+   el("emptyDescription").textContent=isWrong?"まず通常モードで解いて、×を付けた問題がここに集まります。":"範囲や出題モードを変更してみてください。";
+   updateProgress(0);updateStats();return;
+ }
+ render();
+}
+function sessionRated(i){
+ return !!pool[i]&&Object.prototype.hasOwnProperty.call(roundScores,pool[i].id);
+}
+function syncCounts(){
+ answered=0;correct=0;groups={};
+ for(const c of pool){
+   if(!Object.prototype.hasOwnProperty.call(roundScores,c.id))continue;
+   answered++;
+   if(!groups[c.level])groups[c.level]={n:0,ok:0};
+   groups[c.level].n++;
+   if(roundScores[c.id]===1){correct++;groups[c.level].ok++;}
+ }
+ mistaken=answered-correct;
+ totalAnswered=priorAnswered+answered;
+ totalCorrect=priorCorrect+correct;
+}
+function updateNavigation(){
+ const prev=el("prevQuestion"),next=el("nextQuestion");
+ prev.disabled=pos===0;
+ const rated=sessionRated(pos);
+ next.disabled=!rated;
+ next.textContent=pos===pool.length-1?"結果を見る →":"次の問題 →";
+}
+function render(){
+ if(!pool.length)return;
+ const c=pool[pos];ui.tag.textContent=`${c.level}｜${c.unit}`;ui.counter.textContent=`${pos+1} / ${pool.length}問`;
+ ui.question.textContent=c.q;ui.ans.textContent=c.a;ui.explanation.textContent=c.note||"";
+ ui.explanation.classList.toggle("hide",!c.note);
+ const displayVisual=VISUAL_IDS.has(Number(c.id.slice(1)));
+ const diagram=FLOWER_DIAGRAMS[c.id];
+ if(diagram){
+   ui.visual.innerHTML=sessionRated(pos)?diagram:stripSvgAnswerLabels(diagram);
+ }else if(displayVisual&&c.kind==="photo"&&c.media){
+   ui.visual.innerHTML=`<img alt="植物形態の学習写真" src="${c.media}" style="width:100%;height:100%;object-fit:contain" onerror="this.style.display='none';this.parentNode.textContent='画像を取得できませんでした（インターネット接続が必要です）'">`;
+ }else{
+   ui.visual.innerHTML=displayVisual?(sessionRated(pos)?svg(c.kind,c.media):stripSvgAnswerLabels(svg(c.kind,c.media))):"";
+ }
+ ui.visual.classList.toggle("hide",!ui.visual.innerHTML);
+ const seenHere=sessionRated(pos);
+ ui.answer.classList.toggle("hide",!seenHere);ui.rate.classList.toggle("hide",!seenHere);ui.show.classList.toggle("hide",seenHere);
+ ui.rate.querySelectorAll("button").forEach(b=>{
+  const selected=seenHere&&Number(b.dataset.r)===roundScores[c.id];
+  b.classList.toggle("selected",selected);b.setAttribute("aria-pressed",selected?"true":"false");
+ });
+ el("instruction").textContent=seenHere?"このセットでの評価を表示中。○・×を押すと評価を変更できます。":"頭の中で答えてから「答えを見る」。評価すると次へ進みます。";
+ updateNavigation();
+ updateProgress(offset+answered);updateStats();
+}
+function reveal(){
+ if(activeScreen!=="study"||!pool.length||ui.quiz.classList.contains("hide"))return;
+ ui.answer.classList.remove("hide");ui.rate.classList.remove("hide");ui.show.classList.add("hide");
+ const c=pool[pos]; if(FLOWER_DIAGRAMS[c.id])ui.visual.innerHTML=FLOWER_DIAGRAMS[c.id]; else if(c.kind!=="photo" && VISUAL_IDS.has(Number(c.id.slice(1))))ui.visual.innerHTML=svg(c.kind,c.media);
+}
+function moveQuestion(direction){
+ if(activeScreen!=="study"||!pool.length||ui.quiz.classList.contains("hide"))return false;
+ if(direction<0){if(pos===0)return false;pos--;render();window.scrollTo(0,0);return true;}
+ if(!sessionRated(pos))return false;
+ if(pos===pool.length-1){if(answered===pool.length){finishBatch();return true;}return false;}
+ pos++;render();window.scrollTo(0,0);return true;
+}
+function grade(r){
+ if(activeScreen!=="study"||ui.rate.classList.contains("hide")||!pool.length)return;
+ const c=pool[pos],alreadyRated=sessionRated(pos),prev=state[c.id]||{};
+ roundScores[c.id]=r;
+ state[c.id]={rating:r,seen:Math.max(0,Number(prev.seen)||0)+(alreadyRated?0:1),last:Date.now()};save();
+ syncCounts();updateStats();
+ if(pos===pool.length-1&&answered===pool.length){finishBatch();}
+ else if(pos<pool.length-1){pos++;render();window.scrollTo(0,0);}
+ else render();
+}
+function finishBatch(){
+ ui.quiz.classList.add("hide");el("actionDock").classList.add("hide");ui.result.classList.remove("hide");
+ ui.resultEyebrow.textContent=batchSetting==="all"?"今回の結果":`今回の結果（${Math.floor(offset/batchSize)+1}セット目）`;
+ ui.resultBig.textContent=`${answered}問中 ${correct}問 ○`;
+ ui.resultSub.innerHTML=`○の割合 <strong>${Math.round(correct/answered*100)}%</strong> ／ × ${mistaken}問`;
+ const more=offset+pool.length<queue.length;
+ const allDone=offset+pool.length;
+ ui.breakdown.textContent=`全${queue.length}問のうち ${allDone}問まで終了。累計○ ${totalCorrect}/${totalAnswered}問（${Math.round(totalCorrect/totalAnswered*100)}%）。`;
+ if(Object.keys(groups).length>1)ui.breakdown.textContent+="　"+Object.entries(groups).map(([level,v])=>`${level} ${v.ok}/${v.n}`).join("／");
+ ui.nextBatch.classList.toggle("hide",!more);ui.nextBatch.textContent=`次の${Math.min(batchSize,queue.length-allDone)}問へ →`;ui.retry.textContent=more?"最初からやり直す":"もう一度やる";
+ updateProgress(allDone);ui.result.scrollIntoView({behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});
+}
+ui.show.addEventListener("click",reveal);
+ui.rate.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>grade(Number(b.dataset.r))));
+ui.nextBatch.addEventListener("click",()=>{priorAnswered+=answered;priorCorrect+=correct;offset+=pool.length;startBatch();window.scrollTo({top:0,behavior:'smooth'});});
+el("prevQuestion").addEventListener("click",()=>moveQuestion(-1));
+el("nextQuestion").addEventListener("click",()=>moveQuestion(1));
+el("reviewLast").addEventListener("click",()=>{
+ if(!pool.length)return;
+ ui.result.classList.add("hide");ui.quiz.classList.remove("hide");el("actionDock").classList.remove("hide");pos=pool.length-1;render();
+ ui.quiz.scrollIntoView({behavior:'auto',block:'start'});
+});
+document.addEventListener("keydown",e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||activeScreen!=="study"||["INPUT","SELECT","TEXTAREA"].includes(document.activeElement?.tagName))return;
+ if(e.key==="ArrowLeft"){e.preventDefault();moveQuestion(-1);}
+ if(e.key==="ArrowRight"){e.preventDefault();moveQuestion(1);}
+});
+ui.retry.addEventListener("click",()=>{rebuild();window.scrollTo(0,0);});
+el("start").addEventListener("click",beginStudy);
+["backToSetup","emptyBack","finishBack"].forEach(id=>el(id).addEventListener("click",()=>showScreen("setup")));
+el("reset").addEventListener("click",()=>{if(confirm("全20問の評価・学習回数を削除します。よろしいですか？")){state={};save();updateStats();ui.backupMessage.textContent="評価をすべてリセットしました。";}});
+document.addEventListener("keydown",e=>{if(activeScreen!=="study"||e.altKey||e.ctrlKey||e.metaKey||/INPUT|SELECT|TEXTAREA|BUTTON/.test(document.activeElement?.tagName||""))return;if(e.code==="Space"&&!ui.show.classList.contains("hide")){e.preventDefault();reveal();}else if(["1","2"].includes(e.key)&&!ui.rate.classList.contains("hide")){e.preventDefault();grade(Number(e.key)-1);}});
+el("export").addEventListener("click",()=>{
+ const payload={app:"botany-topic-86-89",version:1,exportedAt:new Date().toISOString(),state};
+ const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json;charset=utf-8"});
+ const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="主要な双子葉類の科45-55_学習記録.json";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);ui.backupMessage.textContent="学習記録を書き出しました。";
+});
+el("import").addEventListener("change",async e=>{
+ const file=e.target.files?.[0];if(!file)return;
+ try{
+  const data=JSON.parse(await file.text()),o=data?.state;
+  if(!o||typeof o!=="object"||Array.isArray(o))throw Error("記録データが見つかりません");
+  const ids=new Set(CARDS.map(c=>c.id)),clean={};
+  for(const [id,v] of Object.entries(o)){
+   if(!ids.has(id)||!v||![0,1,2].includes(v.rating))continue;
+   clean[id]={rating:v.rating===2?1:v.rating===1?0:v.rating,seen:Math.max(0,Math.floor(Number(v.seen)||1)),last:Math.max(0,Number(v.last)||0)};
+  }
+  if(!Object.keys(clean).length)throw Error("読み込める評価がありません");
+  if(!confirm(`${Object.keys(clean).length}問分の評価を読み込みます。現在の評価を上書きしてよろしいですか？`))return;
+  state=clean;save();updateStats();ui.backupMessage.textContent=`${Object.keys(clean).length}問分の評価を読み込みました。`;
+ }catch(err){ui.backupMessage.textContent=`読み込みできませんでした：${err.message}`;}finally{e.target.value="";}
+});
+try{showScreen("setup");}catch(e){el("setupScreen").classList.remove("hide");ui.backupMessage.textContent="起動エラー："+e.message;}
+</script></body></html>
