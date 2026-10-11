@@ -156,20 +156,65 @@ function dPinnate(){return dSvg(`<g stroke="#376e54" stroke-width="3"><path d="M
 function dBrassica(){return dSvg(`<g transform="translate(180 83)"><g fill="#f6d467" stroke="#dbb945" stroke-width="2"><ellipse cy="-44" rx="20" ry="38"/><ellipse cy="44" rx="20" ry="38"/><ellipse cx="44" rx="38" ry="20"/><ellipse cx="-44" rx="38" ry="20"/></g><g stroke="#8a705c" stroke-width="3">${[-12,0,12].map(x=>`<line x1="${x}" y1="-11" x2="${x}" y2="-29"/><line x1="${x}" y1="11" x2="${x}" y2="29"/>`).join('')}</g><circle r="13" fill="#9cbe7b"/></g><text x="180" y="168" text-anchor="middle" font-size="13" fill="#55745f">4枚の花弁が十字形に並ぶ</text>`, 'アブラナ科の花冠（模式図）');}
 
 // 公開画像の実物写真（学名・部位を確認した試験導入カード）
-const REAL_PHOTOS={"2":{"file":"Acer palmatum atropurpureum, Rentilly (leaves).jpg","label":"イロハモミジの葉（園芸品種の例）","credit":"Tangopaso / パブリックドメイン"},"4":{"file":"Starr-090618-1216-Pueraria montana var lobata-leaves-Wailua Hana Hwy-Maui (24339100573).jpg","label":"クズの三出複葉","credit":"Forest & Kim Starr / CC BY 3.0 US（改変なし）"},"65":{"file":"Taraxacum officinale flor.JPG","label":"タンポポ属の頭花（セイヨウタンポポの例）","credit":"Paty000 / パブリックドメイン"},"159":{"file":"Taraxacum officinale flor.JPG","label":"タンポポ属の頭花（セイヨウタンポポの例）","credit":"Paty000 / パブリックドメイン"}};
-function photoSetup(card, visibleAnswer){
- const box=$('realPhotoPanel'),btn=$('toggleRealPhoto'),frame=$('realPhotoFrame'),img=$('realPhotoImage');
- const p=REAL_PHOTOS[card.id];box.classList.toggle('hide',!p||!visibleAnswer);frame.classList.add('hide');btn.setAttribute('aria-expanded','false');btn.textContent='📷 実物写真を見る';
- img.removeAttribute('src');if(!p)return;
- const fileUrl='https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(p.file)+'?width=750';
- const source='https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(p.file);
- img.alt=p.label;img.dataset.src=fileUrl;
- const cap=$('realPhotoCaption');cap.textContent='';cap.append(document.createTextNode(p.label+' ／ '+p.credit+'　'));
- const link=document.createElement('a');link.href=source;link.target='_blank';link.rel='noopener noreferrer';link.textContent='出典・ライセンス';cap.appendChild(link);
+
+const REAL_PHOTOS={"2":{"file":"Acer palmatum atropurpureum, Rentilly (leaves).jpg","label":"イロハモミジの葉（園芸品種の例）","credit":"Tangopaso / パブリックドメイン"},"4":{"file":"Starr-090618-1216-Pueraria montana var lobata-leaves-Wailua Hana Hwy-Maui (24339100573).jpg","label":"クズの三出複葉","credit":"Forest & Kim Starr / CC BY 3.0 US"},"65":{"file":"Taraxacum officinale flor.JPG","label":"タンポポの頭花","credit":"Paty000 / パブリックドメイン"},"159":{"file":"Taraxacum officinale flor.JPG","label":"タンポポの頭花","credit":"Paty000 / パブリックドメイン"}};
+const PHOTO_SPECIES=[["ヤツデ","Fatsia japonica"],["イロハモミジ","Acer palmatum"],["トチノキ","Aesculus turbinata"],["クズ","Pueraria montana"],["カタバミ","Oxalis corniculata"],["フジ","Wisteria floribunda"],["ネムノキ","Albizia julibrissin"],["キュウリ","Cucumis sativus"],["ユリ","Lilium"],["タンポポ","Taraxacum officinale"],["オオバコ","Plantago asiatica"],["サクラ","Prunus serrulata"],["ツバキ","Camellia japonica"],["イチョウ","Ginkgo biloba"],["アカマツ","Pinus densiflora"],["クロマツ","Pinus thunbergii"],["ヒノキ","Chamaecyparis obtusa"],["サワラ","Chamaecyparis pisifera"],["スギ","Cryptomeria japonica"],["ヤマボウシ","Cornus kousa"],["サンショウ","Zanthoxylum piperitum"],["ナンテン","Nandina domestica"],["カタクリ","Erythronium japonicum"],["モモ","Prunus persica"],["オナモミ","Xanthium strumarium"],["アセビ","Pieris japonica"],["エノキ","Celtis sinensis"],["ムクノキ","Aphananthe aspera"]];
+let photoLoadVersion=0;
+function photoMatches(card){
+  const txt=card.q+' '+card.a+' '+card.e,found=[];
+  for(const [label,title] of PHOTO_SPECIES){if(txt.includes(label)&&!found.some(x=>x.title===title))found.push({label,title});}
+  return found.slice(0,2);
 }
-$('toggleRealPhoto').addEventListener('click',()=>{
- const frame=$('realPhotoFrame'),btn=$('toggleRealPhoto');const show=frame.classList.contains('hide');frame.classList.toggle('hide',!show);btn.textContent=show?'写真を閉じる':'📷 実物写真を見る';btn.setAttribute('aria-expanded',String(show));if(show&&!$('realPhotoImage').getAttribute('src'))$('realPhotoImage').src=$('realPhotoImage').dataset.src;
-});
+function photoSetup(card,revealed){
+ const has=Boolean(REAL_PHOTOS[card.id]||photoMatches(card).length);
+ $('realPhotoPanel').classList.toggle('hide',!has||!revealed);
+ $('realPhotoFrame').classList.add('hide');
+ $('toggleRealPhoto').textContent='📷 実物写真を見る';
+ $('toggleRealPhoto').setAttribute('aria-expanded','false');
+ $('realPhotoImage').removeAttribute('src');
+ $('realPhotoCaption').textContent='';
+ photoLoadVersion++;
+}
+async function getWikiPhoto(spec){
+  const urls=['https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(spec.title),'https://ja.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(spec.label)];
+  for(const url of urls){
+    try{
+      const res=await fetch(url);
+      if(!res.ok)continue;
+      const d=await res.json();
+      const src=d.thumbnail?.source||d.originalimage?.source;
+      if(src)return {src,label:spec.label,url:d.content_urls?.desktop?.page||url,credit:'Wikipedia / 画像のライセンスは出典ページで確認'};
+    }catch(e){}
+  }
+  return null;
+}
+async function revealPhotos(){
+ const card=CARDS[queue[idx]],v=++photoLoadVersion,frm=$('realPhotoFrame'),img=$('realPhotoImage'),cap=$('realPhotoCaption'),btn=$('toggleRealPhoto');
+ if(!frm.classList.contains('hide')){frm.classList.add('hide');btn.textContent='📷 実物写真を見る';btn.setAttribute('aria-expanded','false');return;}
+ frm.classList.remove('hide');btn.textContent='写真を閉じる';btn.setAttribute('aria-expanded','true');cap.textContent='写真を読み込み中…';img.style.display='none';
+ const names=photoMatches(card);
+ let results=await Promise.all(names.map(getWikiPhoto));
+ if(v!==photoLoadVersion)return;
+ let found=results.filter(Boolean);
+ if(!found.length&&REAL_PHOTOS[card.id]){
+  const p=REAL_PHOTOS[card.id],src='https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(p.file)+'?width=750';
+  found=[{src,label:p.label,url:'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(p.file),credit:p.credit}];
+ }
+ if(!found.length){cap.textContent='このカードの写真は現在取得できません。';return;}
+ const first=found[0];
+ img.style.display='block';img.src=first.src;img.alt=first.label;
+ img.onerror=()=>{if(v===photoLoadVersion)cap.insertAdjacentText('beforeend','（画像の読み込みに失敗しました）');};
+ cap.textContent='';
+ for(const p of found){
+ const wrap=document.createElement('div');wrap.style.marginBottom='8px';
+ const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=p.label+'：出典・ライセンス';
+ wrap.appendChild(link);cap.appendChild(wrap);
+ }
+ if(found.length>1){
+  for(const p of found.slice(1)){const extra=document.createElement('img');extra.src=p.src;extra.alt=p.label;extra.loading='lazy';extra.style.cssText='width:100%;max-height:240px;object-fit:contain;margin:9px 0;border-radius:9px';cap.insertBefore(extra,cap.lastElementChild);}
+ }
+}
+$('toggleRealPhoto').addEventListener('click',revealPhotos);
 function makeDiagram(card){let q=card.q;
   if(/単葉と複葉の違い|ヤツデの葉|イロハモミジの葉は|葉が掌状に深く裂けた単葉/.test(q))return dLeaf();
   if(/三出複葉|クズやカタバミ/.test(q))return dTrifoliate();
