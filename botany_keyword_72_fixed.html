@@ -22,7 +22,7 @@
 <div id="question" class="q"></div>
 <button id="reveal" class="btn green" style="width:100%;margin:12px 0">答えを見る</button>
 <div id="answerBox" class="answerbox hide">
-<div class="alabel">答え</div><div id="answerMain" class="amain"></div><div id="answerExp" class="exp"></div><div id="diagram" class="diagram"></div><div id="photoBox" class="photobox"><div class="photohead">参考画像</div><div id="photoArea" class="photogrid"></div></div></div>
+<div class="alabel">答え</div><div id="answerMain" class="amain"></div><div id="answerExp" class="exp"></div><button id="showImages" class="btn outline" type="button" style="width:100%;margin:14px 0 0">画像を見る</button><div id="imageSection" class="hide"><div id="diagram" class="diagram"></div><div id="photoBox" class="photobox"><div class="photohead">参考画像</div><div id="photoArea" class="photogrid"></div></div></div></div>
 <div id="previousMark" class="note hide" style="margin-bottom:12px"></div>
 <div id="grading" class="grid two hide"><button id="ng" class="btn red">× 覚えていない</button><button id="ok" class="btn green">○ 覚えていた</button></div>
 <div class="grid two" style="margin-top:12px"><button id="prev" class="btn soft">← 1問戻る</button><button id="skip" class="btn outline">スキップ</button></div>
@@ -163,6 +163,8 @@ function render(){
   $('catChip').textContent=c.cat; $('subChip').textContent=c.sub;
   $('question').textContent=c.q; $('answerMain').textContent=c.a; $('answerExp').textContent=c.e;
   $('diagram').innerHTML=makeDiagram(c.diag);
+  $('imageSection').classList.add('hide');
+  $('showImages').textContent='画像を見る';
   $('answerBox').classList.add('hide');
   $('grading').classList.add('hide');
   $('reveal').classList.remove('hide');
@@ -185,6 +187,8 @@ function renderResult(){
   $('detail').innerHTML=ids.map((id,i)=>{const c=CARDS.find(x=>x.id===id); const m=state.marks[id]; const cls=m===true?'ok':m===false?'ng':'skip'; const label=m===true?'○ 覚えていた':m===false?'× 覚えていない':'スキップ'; return `<div class="resultLine ${cls}"><strong>第${i+1}問</strong> [${c.cat} / ${c.sub}]<br>${c.q}<br><span class="small">答え：${c.a} / 判定：${label}</span></div>`;}).join('');
 }
 $('start').onclick=()=>startQuiz(false); $('resume').onclick=()=>{load(); if(state.queue.length) startQuiz(true); else alert('再開できる途中データがありません。');};
+
+$('showImages').onclick=()=>{const section=$('imageSection');const opening=section.classList.contains('hide');section.classList.toggle('hide',!opening);$('showImages').textContent=opening?'画像を隠す':'画像を見る';if(opening){const c=currentCard();renderPhotos(c).catch(()=>{$('photoArea').textContent='参考画像を取得できませんでした。';});}};
 $('reveal').onclick=()=>{const c=currentCard();if(!c)return;$('answerBox').classList.remove('hide');$('grading').classList.remove('hide');$('reveal').classList.add('hide');renderPhotos(c).catch(()=>{ $('photoArea').textContent='画像を取得できませんでした。模式図で学習できます。'; });};
 $('ok').onclick=()=>mark(true); $('ng').onclick=()=>mark(false); $('skip').onclick=()=>mark('skip'); $('prev').onclick=()=>{if(state.idx>0){state.idx--; render();}};
 $('backHome').onclick=()=>{save(); show('home');}; $('resultHome').onclick=()=>show('home');
