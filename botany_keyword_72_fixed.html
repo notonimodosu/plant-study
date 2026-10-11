@@ -189,7 +189,7 @@ function renderResult(){
 $('start').onclick=()=>startQuiz(false); $('resume').onclick=()=>{load(); if(state.queue.length) startQuiz(true); else alert('再開できる途中データがありません。');};
 
 $('showImages').onclick=()=>{const section=$('imageSection');const opening=section.classList.contains('hide');section.classList.toggle('hide',!opening);$('showImages').textContent=opening?'画像を隠す':'画像を見る';if(opening){const c=currentCard();renderPhotos(c).catch(()=>{$('photoArea').textContent='参考画像を取得できませんでした。';});}};
-$('reveal').onclick=()=>{const c=currentCard();if(!c)return;$('answerBox').classList.remove('hide');$('grading').classList.remove('hide');$('reveal').classList.add('hide');renderPhotos(c).catch(()=>{ $('photoArea').textContent='画像を取得できませんでした。模式図で学習できます。'; });};
+$('reveal').onclick=()=>{const c=currentCard();if(!c)return;$('answerBox').classList.remove('hide');$('grading').classList.remove('hide');$('reveal').classList.add('hide');};
 $('ok').onclick=()=>mark(true); $('ng').onclick=()=>mark(false); $('skip').onclick=()=>mark('skip'); $('prev').onclick=()=>{if(state.idx>0){state.idx--; render();}};
 $('backHome').onclick=()=>{save(); show('home');}; $('resultHome').onclick=()=>show('home');
 load();
