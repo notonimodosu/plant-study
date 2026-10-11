@@ -175,7 +175,9 @@ function photoSetup(card,revealed){
  $('realPhotoCaption').textContent='';
  photoLoadVersion++;
 }
+const LOCAL_PHOTO_MAP={"ヤツデ": {"src": "./plant_photos/fatsia_japonica.jpg", "label": "ヤツデ", "url": "https://commons.wikimedia.org/wiki/File:Fatsia_japonica_leaves.jpg", "credit": "Dinkum / CC0 1.0"}, "イロハモミジ": {"src": "./plant_photos/acer_palmatum.jpg", "label": "イロハモミジ", "url": "https://commons.wikimedia.org/wiki/File:Acer_palmatum_atropurpureum%2C_Rentilly_%28leaves%29.jpg", "credit": "Tangopaso / Public domain"}, "タンポポ": {"src": "./plant_photos/taraxacum_officinale.jpg", "label": "タンポポ", "url": "https://commons.wikimedia.org/wiki/File:Taraxacum_officinale_flor.JPG", "credit": "Paty000 / Public domain"}};
 async function getWikiPhoto(spec){
+ if(LOCAL_PHOTO_MAP[spec.label])return LOCAL_PHOTO_MAP[spec.label];
   const urls=['https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(spec.title),'https://ja.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(spec.label)];
   for(const url of urls){
     try{

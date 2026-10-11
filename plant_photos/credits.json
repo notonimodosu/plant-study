@@ -1,0 +1,20 @@
+{
+  "fatsia_japonica.jpg": {
+    "label": "ヤツデ",
+    "file": "Fatsia japonica leaves.jpg",
+    "credit": "Dinkum / CC0 1.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fatsia_japonica_leaves.jpg"
+  },
+  "acer_palmatum.jpg": {
+    "label": "イロハモミジ（栽培品種）",
+    "file": "Acer palmatum atropurpureum, Rentilly (leaves).jpg",
+    "credit": "Tangopaso / Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Acer_palmatum_atropurpureum%2C_Rentilly_%28leaves%29.jpg"
+  },
+  "taraxacum_officinale.jpg": {
+    "label": "セイヨウタンポポ",
+    "file": "Taraxacum officinale flor.JPG",
+    "credit": "Paty000 / Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Taraxacum_officinale_flor.JPG"
+  }
+}
