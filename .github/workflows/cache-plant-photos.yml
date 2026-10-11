@@ -1,0 +1,68 @@
+name: Cache selected plant photos
+on:
+  push:
+    paths:
+      - '.github/workflows/cache-plant-photos.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  save-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download reuse-licensed photos
+        run: |
+          python3 - <<'PY'
+          import json,urllib.parse,urllib.request,pathlib,time
+          photos={
+           'fatsia_japonica.jpg':('Fatsia japonica leaves.jpg','ヤツデ','Dinkum / CC0 1.0'),
+           'acer_palmatum.jpg':('Acer palmatum atropurpureum, Rentilly (leaves).jpg','イロハモミジ（栽培品種）','Tangopaso / Public domain'),
+           'taraxacum_officinale.jpg':('Taraxacum officinale flor.JPG','セイヨウタンポポ','Paty000 / Public domain'),
+          }
+          directory=pathlib.Path('plant_photos');directory.mkdir(exist_ok=True)
+          manifest={}
+          for local,(file,ja,credit) in photos.items():
+            api='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode({'action':'query','titles':'File:'+file,'prop':'imageinfo','iiprop':'url','iiurlwidth':720,'format':'json'})
+            def get(url):
+              req=urllib.request.Request(url,headers={'User-Agent':'PlantStudyEducationalApp/1.0 (personal study; contact via GitHub)'})
+              with urllib.request.urlopen(req,timeout=35) as r:return r.read()
+            try:
+              j=json.loads(get(api));pg=next(iter(j['query']['pages'].values()));imageinfo=pg['imageinfo'][0]
+              url=imageinfo.get('thumburl') or imageinfo['url'];data=get(url)
+              if len(data)<10000 or data[:3]!=b'\xff\xd8\xff':raise RuntimeError('not a JPEG image')
+              (directory/local).write_bytes(data)
+              manifest[local]={'label':ja,'file':file,'credit':credit,'source':'https://commons.wikimedia.org/wiki/File:'+urllib.parse.quote(file.replace(' ','_'))}
+              print('Downloaded',local,len(data))
+            except Exception as e:print('Failed',local,e)
+            time.sleep(1)
+          (directory/'credits.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+          if not manifest:raise RuntimeError('No photos downloaded. Not replacing app.')
+          PY
+      - name: Patch app to prefer local photos
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          d=json.loads(Path('plant_photos/credits.json').read_text())
+          if not d:raise SystemExit('No images')
+          app=next(p for p in Path('.').glob('E6_A4_8D*.html') if 'QA' in p.name)
+          s=app.read_text(encoding='utf-8')
+          marker='async function getWikiPhoto(spec){'
+          if marker not in s:raise RuntimeError('App interface changed')
+          lookup={'ヤツデ':'fatsia_japonica.jpg','イロハモミジ':'acer_palmatum.jpg','タンポポ':'taraxacum_officinale.jpg'}
+          mapping={k:{'src':'./plant_photos/'+v,'label':k,'url':d[v]['source'],'credit':d[v]['credit']} for k,v in lookup.items() if v in d}
+          insert='const LOCAL_PHOTO_MAP='+json.dumps(mapping,ensure_ascii=False)+';\n'
+          if 'const LOCAL_PHOTO_MAP=' not in s:s=s.replace(marker,insert+marker)
+          s=s.replace('async function getWikiPhoto(spec){\n','async function getWikiPhoto(spec){\n if(LOCAL_PHOTO_MAP[spec.label])return LOCAL_PHOTO_MAP[spec.label];\n')
+          app.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit downloaded photos
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add plant_photos/ E6_A4_8D*.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Cache licensed plant photos for offline app'
+            git push
+          fi
