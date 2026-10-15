@@ -1,0 +1,40 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#355c3a"><title>球果識別・最短攻略20問</title><style>*{box-sizing:border-box}body{margin:0;background:#f4f7f1;color:#203125;font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif}main{max-width:600px;margin:auto;padding:18px 16px 40px}h1{font-size:24px;margin:8px 0}p{line-height:1.6}.muted{color:#607263;font-size:14px}.panel{background:white;border:1px solid #d8e5d7;border-radius:18px;padding:18px;margin:15px 0;box-shadow:0 3px 12px #2139210b}button,select{font:inherit;border-radius:12px;padding:13px;border:1px solid #bfd2bf;background:white;color:#21412b}button{cursor:pointer}button:disabled{opacity:.4}.primary{background:#355f40;color:white;border-color:#355f40;font-weight:750}.wide{width:100%;margin:7px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid button{width:100%}.top{display:flex;justify-content:space-between;align-items:center;gap:8px}.top button{font-size:13px;padding:9px}.q{font-size:21px;font-weight:750;line-height:1.5;margin:13px 0 20px}.option{display:block;text-align:left;width:100%;margin:9px 0;line-height:1.45}.chosen{border:2px solid #355f40;background:#e5f1e5}.answer{background:#edf4e9;border-radius:12px;padding:13px;margin-top:13px;line-height:1.7}.hidden{display:none}.pill{display:inline-block;border-radius:40px;background:#e1ebe0;padding:6px 11px;font-size:12px}a{color:#376442}#bottom{margin-top:7px}label{display:block;margin:14px 0}.bar{height:7px;border-radius:6px;background:#dce7d9;overflow:hidden;margin:12px 0}.bar>div{height:100%;background:#45764c;transition:width .2s}</style></head><body><main><div class="top"><a href="./index.html">‹ 学習ホームへ</a><span class="pill">生物分類技能検定2級</span></div><h1>🌲 松ぼっくり・球果の最短識別</h1><p class="muted">モミ・トウヒ・スギ・マツ類の決め手／全20問</p><section id="settings" class="panel"><strong>出題設定</strong><label>出題範囲<br><select id="size"><option value="10">10問</option><option value="20">20問</option><option value="all">全20問</option></select></label><label><input id="miss" type="checkbox"> 前回までに間違えた問題だけ</label><label><input id="random" type="checkbox" checked> 出題順をシャッフル</label><button class="primary wide" id="start">学習スタート</button><p class="muted">一問ずつ正誤判定。途中で「一問戻る」も使えます。間違い履歴はこのブラウザに保存。</p></section><section id="study" class="panel hidden"><div class="top"><span id="progress" class="muted"></span><button id="home">設定へ戻る</button></div><div class="bar"><div id="fill"></div></div><div class="q" id="question"></div><div id="options"></div><div class="answer hidden" id="feedback"></div><div id="bottom" class="grid"><button id="prev">← 一問戻る</button><button class="primary" id="next" disabled>次の問題 →</button></div></section><section id="done" class="panel hidden"><h2>学習結果</h2><p id="summary"></p><button class="primary wide" id="again">設定へ戻る</button></section></main><script>
+const DATA=[{"q":"球果が直立し、成熟すると樹上で種鱗が崩れる。まず疑う属は？","a":"モミ属","choices":["モミ属","トウヒ属","マツ属","スギ属"],"exp":"モミ属の代表的な特徴。ただしヒマラヤスギ属も直立して崩れる。"},{"q":"球果が下垂し、形を保って落下する。モミ属との二択なら？","a":"トウヒ属","choices":["トウヒ属","モミ属","ヒマラヤスギ属","スギ属"],"exp":"トウヒ属は下垂。モミ属は直立・成熟時に崩壊。"},{"q":"大きな球果が直立し、熟すと崩壊。モミ属以外の重要候補は？","a":"ヒマラヤスギ属","choices":["ヒマラヤスギ属","トウヒ属","スギ属","ヒノキ属"],"exp":"ヒマラヤスギ属も上向きで崩れる。直立だけでモミ属と断定しない。"},{"q":"小さなほぼ球形の球果に、尖った突起が多い。候補は？","a":"スギ","choices":["スギ","ヒノキ","モミ","マツ"],"exp":"スギは苞鱗先端などが突き出し、粗い表面になる。"},{"q":"小型の球果が木質の盾状鱗片で構成される。候補は？","a":"ヒノキ","choices":["ヒノキ","スギ","メタセコイア","クロマツ"],"exp":"ヒノキの球果は盾状の鱗片が目立つ。"},{"q":"メタセコイアとラクウショウ。葉が対生なら？","a":"メタセコイア","choices":["メタセコイア","ラクウショウ","スギ","ヒノキ"],"exp":"球果が似ても葉序で区別。メタセコイアは対生。"},{"q":"メタセコイアとラクウショウ。葉が互生なら？","a":"ラクウショウ","choices":["ラクウショウ","メタセコイア","ヒノキ","モミ"],"exp":"ラクウショウは互生の葉。"},{"q":"湿地・膝根・丸い球果が手がかり。候補は？","a":"ラクウショウ","choices":["ラクウショウ","メタセコイア","アカマツ","トウヒ"],"exp":"膝根は常に見られるわけではないが有力な手がかり。"},{"q":"落葉針葉樹で、短枝に針葉が多数束生する。候補は？","a":"カラマツ属","choices":["カラマツ属","マツ属","モミ属","スギ属"],"exp":"カラマツ属は短枝に針葉が多数。"},{"q":"アカマツとクロマツに共通する針葉の束は？","a":"2本束","choices":["2本束","3本束","5本束","多数束"],"exp":"どちらも二葉松。球果だけの識別は難しい。"},{"q":"五葉松という語が出たら、針葉の束は？","a":"5本束","choices":["5本束","2本束","3本束","単生"],"exp":"ゴヨウマツなどは一般に5本束。"},{"q":"アカマツとクロマツ。冬芽に白い樹脂がよく目立つのは？","a":"クロマツ","choices":["クロマツ","アカマツ","トウヒ","モミ"],"exp":"クロマツは冬芽が白く見えることが多い。"},{"q":"アカマツとクロマツ。樹皮の上部が赤褐色なら？","a":"アカマツ","choices":["アカマツ","クロマツ","カラマツ","トウヒ"],"exp":"アカマツの特徴。樹皮の個体差にも注意。"},{"q":"針葉が1本ずつ付き、球果が下垂。モミとの二択なら？","a":"トウヒ","choices":["トウヒ","モミ","カラマツ","アカマツ"],"exp":"トウヒ属は葉の付け根に葉枕が目立つことも重要。"},{"q":"球果が上向きでもモミ属と確定できない理由は？","a":"ヒマラヤスギ属も直立する","choices":["ヒマラヤスギ属も直立する","スギも必ず直立する","トウヒ属もすべて直立する","マツ属は球果をつけない"],"exp":"ヒマラヤスギ属の球果も成熟時に崩れる。"},{"q":"典型的なマツ属の球果で、1枚ずつ開く木質部分は？","a":"種鱗","choices":["種鱗","花弁","萼片","果皮"],"exp":"裸子植物の球果であり、被子植物の果実ではない。"},{"q":"『松ぼっくり』は植物形態学的には何と呼ぶ？","a":"球果","choices":["球果","液果","核果","蒴果"],"exp":"松ぼっくりは球果。真の果実ではない。"},{"q":"モミ属の成熟した球果は枝にどう残りやすい？","a":"軸が残る","choices":["軸が残る","球果全体が閉じたまま残る","果肉だけ残る","花弁が残る"],"exp":"種鱗などが落ち、球果の軸が残る。"},{"q":"スギとヒノキの球果。尖った突起が多いのは？","a":"スギ","choices":["スギ","ヒノキ","どちらも果肉質","どちらも無鱗片"],"exp":"ヒノキは盾状鱗片、スギは突起が目立つ。"},{"q":"樹木の球果写真だけでは曖昧なとき、何を併せて見る？","a":"葉序・針葉の束・冬芽","choices":["葉序・針葉の束・冬芽","花びらの色だけ","樹高だけ","根の長さだけ"],"exp":"マツ属の種やメタセコイア・ラクウショウの識別で重要。"}];
+const KEY="cone_shortcuts_missed_v1";
+let missed=new Set();try{missed=new Set(JSON.parse(localStorage.getItem(KEY)||"[]"))}catch(e){}
+let order=[],index=0,selected={};
+const $=id=>document.getElementById(id);
+function save(){try{localStorage.setItem(KEY,JSON.stringify([...missed]))}catch(e){}}
+function shuffle(a){for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function opts(q){return q.choices.slice()}
+function start(){DATA.forEach(q=>delete q._choices);let arr=DATA.map((_,i)=>i);if($("miss").checked)arr=arr.filter(i=>missed.has(i));if(!arr.length){alert("復習対象の間違い問題はまだありません");return}if($("random").checked)shuffle(arr);order=arr.slice(0,$("size").value==="all"?arr.length:Number($("size").value));index=0;selected={};$("settings").classList.add("hidden");$("done").classList.add("hidden");$("study").classList.remove("hidden");render()}
+function render(){
+  if(index>=order.length){finish();return}
+  const id=order[index],q=DATA[id],v=selected[id];
+  $("progress").textContent=(index+1)+" / "+order.length;
+  $("fill").style.width=(index/order.length*100)+"%";
+  $("question").textContent=q.q;
+  const container=$("options");
+  container.replaceChildren();
+  if(!q._choices)q._choices=shuffle(opts(q));
+  const choices=q._choices;
+  for(const a of choices){
+    const b=document.createElement("button");
+    b.type="button";
+    b.className="option"+(v&&v.a===a?" chosen":"");
+    b.textContent=a;
+    b.disabled=Boolean(v);
+    b.addEventListener("click",()=>choose(id,a,choices));
+    container.appendChild(b);
+  }
+  $("feedback").classList.toggle("hidden",!v);
+  if(v)$("feedback").textContent=(v.a===q.a?"✓ 正解":"× 不正解")+"｜正答："+q.a+"。 "+q.exp;
+  $("next").disabled=!v;
+  $("prev").disabled=index===0;
+  $("next").textContent=index===order.length-1?"結果を見る →":"次の問題 →";
+}
+function choose(id,a,choices){selected[id]={a,choices};if(a===DATA[id].a)missed.delete(id);else missed.add(id);save();render()}
+function finish(){$("study").classList.add("hidden");$("done").classList.remove("hidden");let correct=order.filter(i=>selected[i]?.a===DATA[i].a).length;$("summary").textContent=order.length+"問中 "+correct+"問正解。間違い履歴は保存しました。"}
+function reset(){$("study").classList.add("hidden");$("done").classList.add("hidden");$("settings").classList.remove("hidden")}
+$("start").onclick=start;$("home").onclick=reset;$("again").onclick=reset;$("prev").onclick=()=>{if(index>0){index--;render()}};$("next").onclick=()=>{if(selected[order[index]]){index++;render()}};
+</script></body></html>
