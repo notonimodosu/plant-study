@@ -1,0 +1,40 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#355c3a"><title>キンポウゲ科・最短識別20問</title><style>*{box-sizing:border-box}body{margin:0;background:#f4f7f1;color:#203125;font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif}main{max-width:600px;margin:auto;padding:18px 16px 40px}h1{font-size:24px;margin:8px 0}p{line-height:1.6}.muted{color:#607263;font-size:14px}.panel{background:white;border:1px solid #d8e5d7;border-radius:18px;padding:18px;margin:15px 0;box-shadow:0 3px 12px #2139210b}button,select{font:inherit;border-radius:12px;padding:13px;border:1px solid #bfd2bf;background:white;color:#21412b}button{cursor:pointer}button:disabled{opacity:.4}.primary{background:#355f40;color:white;border-color:#355f40;font-weight:750}.wide{width:100%;margin:7px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid button{width:100%}.top{display:flex;justify-content:space-between;align-items:center;gap:8px}.top button{font-size:13px;padding:9px}.q{font-size:21px;font-weight:750;line-height:1.5;margin:13px 0 20px}.option{display:block;text-align:left;width:100%;margin:9px 0;line-height:1.45}.chosen{border:2px solid #355f40;background:#e5f1e5}.answer{background:#edf4e9;border-radius:12px;padding:13px;margin-top:13px;line-height:1.7}.hidden{display:none}.pill{display:inline-block;border-radius:40px;background:#e1ebe0;padding:6px 11px;font-size:12px}a{color:#376442}#bottom{margin-top:7px}label{display:block;margin:14px 0}.bar{height:7px;border-radius:6px;background:#dce7d9;overflow:hidden;margin:12px 0}.bar>div{height:100%;background:#45764c;transition:width .2s}</style></head><body><main><div class="top"><a href="./index.html">‹ 学習ホームへ</a><span class="pill">生物分類技能検定2級</span></div><h1>🌼 キンポウゲ科・最短識別</h1><p class="muted">袋果と痩果・距・花の相称性・属の違い／全20問</p><section id="settings" class="panel"><strong>出題設定</strong><label>出題範囲<br><select id="size"><option value="10">10問</option><option value="20">20問</option><option value="all">全20問</option></select></label><label><input id="miss" type="checkbox"> 前回までに間違えた問題だけ</label><label><input id="random" type="checkbox" checked> 出題順をシャッフル</label><button class="primary wide" id="start">学習スタート</button><p class="muted">一問ずつ正誤判定。途中で「一問戻る」も使えます。間違い履歴はこのブラウザに保存。</p></section><section id="study" class="panel hidden"><div class="top"><span id="progress" class="muted"></span><button id="home">設定へ戻る</button></div><div class="bar"><div id="fill"></div></div><div class="q" id="question"></div><div id="options"></div><div class="answer hidden" id="feedback"></div><div id="bottom" class="grid"><button id="prev">← 一問戻る</button><button class="primary" id="next" disabled>次の問題 →</button></div></section><section id="done" class="panel hidden"><h2>学習結果</h2><p id="summary"></p><button class="primary wide" id="again">設定へ戻る</button></section></main><script>
+const DATA=[{"q":"オダマキ属の果実は？","a":"袋果","choices":["袋果","痩果","液果","核果"],"exp":"距のある花と袋果がセット。"},{"q":"トリカブト属の果実は？","a":"袋果","choices":["袋果","痩果","蒴果","核果"],"exp":"兜状の萼片、左右相称、袋果。"},{"q":"センニンソウ属の果実は？","a":"痩果","choices":["痩果","袋果","液果","蒴果"],"exp":"花柱が伸び、羽毛状になる種類が多い。"},{"q":"イチリンソウの果実は？","a":"痩果","choices":["痩果","袋果","石果","液果"],"exp":"2012年度検索表のポイント。"},{"q":"キンポウゲ属の果実は？","a":"痩果","choices":["痩果","袋果","蒴果","液果"],"exp":"多数の離生心皮から痩果が形成される。"},{"q":"フクジュソウ属の果実は？","a":"痩果","choices":["痩果","袋果","核果","液果"],"exp":"黄色い花と痩果を関連づける。"},{"q":"サラシナショウマ類の果実は？","a":"袋果","choices":["袋果","痩果","液果","核果"],"exp":"白い小花の総状花序と袋果。"},{"q":"レンゲショウマ属の果実は？","a":"袋果","choices":["袋果","痩果","蒴果","液果"],"exp":"淡紫色の下向きの花と袋果。"},{"q":"成熟すると裂開する果実は？","a":"袋果","choices":["袋果","痩果","核果","穎果"],"exp":"袋果は一般に1心皮由来で腹縫線に沿って開く。"},{"q":"成熟しても基本的に裂開しない果実は？","a":"痩果","choices":["痩果","袋果","蒴果","豆果"],"exp":"痩果は閉果。種子と果皮を区別する。"},{"q":"兜のような萼片が目立つ属は？","a":"トリカブト属","choices":["トリカブト属","キンポウゲ属","フクジュソウ属","センニンソウ属"],"exp":"トリカブト属は左右相称の花。"},{"q":"花に長い距があり、通常は放射相称なのは？","a":"オダマキ属","choices":["オダマキ属","トリカブト属","センニンソウ属","キンポウゲ属"],"exp":"オダマキ属は花弁に距があり、基本的に放射相称。"},{"q":"左右相称の花をつける代表的な属は？","a":"トリカブト属","choices":["トリカブト属","キンポウゲ属","フクジュソウ属","イチリンソウ属"],"exp":"兜状の上萼片が特徴。"},{"q":"黄色の花弁が目立ち、放射相称の属は？","a":"キンポウゲ属","choices":["キンポウゲ属","トリカブト属","センニンソウ属","レンゲショウマ属"],"exp":"キンポウゲ属には黄色の5弁花が多い。"},{"q":"つる性で花柱が羽毛状になる種類が多い属は？","a":"センニンソウ属","choices":["センニンソウ属","オダマキ属","トリカブト属","フクジュソウ属"],"exp":"痩果と宿存する羽毛状花柱。"},{"q":"チングルマの所属科は？","a":"バラ科","choices":["バラ科","キンポウゲ科","ユリ科","キク科"],"exp":"センニンソウと同様に羽毛状の花柱が目立つが別の科。"},{"q":"イチリンソウで白い花弁に見える部分は？","a":"萼片","choices":["萼片","苞葉","雄しべ","雌しべ"],"exp":"イチリンソウには一般的な花弁がなく、白い萼片が目立つ。"},{"q":"トリカブトで兜状に見えるのは？","a":"萼片","choices":["萼片","花弁","苞葉","雄しべ"],"exp":"上側の萼片が兜状になる。"},{"q":"キンポウゲ科の子房位置は基本的に？","a":"子房上位","choices":["子房上位","子房下位","子房中位","裸子植物なので子房がない"],"exp":"離生心皮が多く、子房上位が基本。"},{"q":"2012年度の検索表：イチリンソウと同じ痩果で、羽毛状花柱なら？","a":"センニンソウ","choices":["センニンソウ","フクジュソウ","トリカブト","オダマキ"],"exp":"科も確認。チングルマはバラ科。"}];
+const KEY="ranunculaceae_shortcuts_missed_v1";
+let missed=new Set();try{missed=new Set(JSON.parse(localStorage.getItem(KEY)||"[]"))}catch(e){}
+let order=[],index=0,selected={};
+const $=id=>document.getElementById(id);
+function save(){try{localStorage.setItem(KEY,JSON.stringify([...missed]))}catch(e){}}
+function shuffle(a){for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function opts(q){return q.choices.slice()}
+function start(){DATA.forEach(q=>delete q._choices);let arr=DATA.map((_,i)=>i);if($("miss").checked)arr=arr.filter(i=>missed.has(i));if(!arr.length){alert("復習対象の間違い問題はまだありません");return}if($("random").checked)shuffle(arr);order=arr.slice(0,$("size").value==="all"?arr.length:Number($("size").value));index=0;selected={};$("settings").classList.add("hidden");$("done").classList.add("hidden");$("study").classList.remove("hidden");render()}
+function render(){
+  if(index>=order.length){finish();return}
+  const id=order[index],q=DATA[id],v=selected[id];
+  $("progress").textContent=(index+1)+" / "+order.length;
+  $("fill").style.width=(index/order.length*100)+"%";
+  $("question").textContent=q.q;
+  const container=$("options");
+  container.replaceChildren();
+  if(!q._choices)q._choices=shuffle(opts(q));
+  const choices=q._choices;
+  for(const a of choices){
+    const b=document.createElement("button");
+    b.type="button";
+    b.className="option"+(v&&v.a===a?" chosen":"");
+    b.textContent=a;
+    b.disabled=Boolean(v);
+    b.addEventListener("click",()=>choose(id,a,choices));
+    container.appendChild(b);
+  }
+  $("feedback").classList.toggle("hidden",!v);
+  if(v)$("feedback").textContent=(v.a===q.a?"✓ 正解":"× 不正解")+"｜正答："+q.a+"。 "+q.exp;
+  $("next").disabled=!v;
+  $("prev").disabled=index===0;
+  $("next").textContent=index===order.length-1?"結果を見る →":"次の問題 →";
+}
+function choose(id,a,choices){selected[id]={a,choices};if(a===DATA[id].a)missed.delete(id);else missed.add(id);save();render()}
+function finish(){$("study").classList.add("hidden");$("done").classList.remove("hidden");let correct=order.filter(i=>selected[i]?.a===DATA[i].a).length;$("summary").textContent=order.length+"問中 "+correct+"問正解。間違い履歴は保存しました。"}
+function reset(){$("study").classList.add("hidden");$("done").classList.add("hidden");$("settings").classList.remove("hidden")}
+$("start").onclick=start;$("home").onclick=reset;$("again").onclick=reset;$("prev").onclick=()=>{if(index>0){index--;render()}};$("next").onclick=()=>{if(selected[order[index]]){index++;render()}};
+</script></body></html>
