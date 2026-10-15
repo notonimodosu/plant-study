@@ -6,9 +6,50 @@ let order=[],index=0,selected={};
 const $=id=>document.getElementById(id);
 function save(){try{localStorage.setItem(KEY,JSON.stringify([...missed]))}catch(e){}}
 function shuffle(a){for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-function opts(q){const positional=["上位","中位","下位"];const pool=positional.includes(q.a)?positional: [...new Set(DATA.map(item=>item.a).filter(a=>!positional.includes(a)))];const other=shuffle(pool.filter(a=>a!==q.a));return shuffle([q.a,...other.slice(0,3)])}
-function start(){let arr=DATA.map((_,i)=>i);if($("miss").checked)arr=arr.filter(i=>missed.has(i));if(!arr.length){alert("復習対象の間違い問題はまだありません");return}if($("random").checked)shuffle(arr);order=arr.slice(0,$("size").value==="all"?arr.length:Number($("size").value));index=0;selected={};$("settings").classList.add("hidden");$("done").classList.add("hidden");$("study").classList.remove("hidden");render()}
-function render(){if(index>=order.length){finish();return}const id=order[index],q=DATA[id],v=selected[id];$("progress").textContent=(index+1)+" / "+order.length;$("fill").style.width=(index/order.length*100)+"%";$("question").textContent=q.q;$("options").innerHTML="";let choices=opts(q);if(v)choices=v.choices;choices.forEach(a=>{let b=document.createElement("button");b.className="option"+(v&&v.a===a?" chosen":"");b.textContent=a;b.disabled=!!v;b.onclick=()=>choose(id,a,choices);$("options").appendChild(b)});$("feedback").classList.toggle("hidden",!v);if(v)$("feedback").textContent=(v.a===q.a?"✓ 正解":"× 不正解")+"｜正答："+q.a+"。 "+q.exp;$("next").disabled=!v;$("prev").disabled=index===0;$("next").textContent=index===order.length-1?"結果を見る →":"次の問題 →"}
+function opts(q){
+  const pos=["上位","中位","下位"];
+  if(pos.includes(q.a)) return pos.slice();
+  const custom={
+    "果実":["果実","種子","胚","花粉"],
+    "種子":["種子","果実","果皮","花托"],
+    "果皮":["果皮","種皮","胚乳","花托"],
+    "キク科":["キク科","マメ科","アブラナ科","ナス科"],
+    "ユリ科":["ユリ科","ラン科","アヤメ科","キク科"],
+    "アカネ科":["アカネ科","アブラナ科","マメ科","ユリ科"],
+    "ナス科":["ナス科","ウリ科","ラン科","キク科"],
+    "リンゴ・ナシ":["リンゴ・ナシ","サクラ・ウメ","モモ・スモモ","バラ・サクラ"],
+    "サクラ・ウメ・モモ":["サクラ・ウメ・モモ","リンゴ・ナシ","キュウリ・カボチャ","タンポポ・ヨモギ"]
+  };
+  if(custom[q.a]) return custom[q.a].slice();
+  const all=[...new Set(DATA.map(x=>x.a))].filter(x=>x!==q.a && x!=="上位"&&x!=="中位"&&x!=="下位");
+  return [q.a,...shuffle(all).slice(0,3)];
+}
+function start(){DATA.forEach(q=>delete q._choices);let arr=DATA.map((_,i)=>i);if($("miss").checked)arr=arr.filter(i=>missed.has(i));if(!arr.length){alert("復習対象の間違い問題はまだありません");return}if($("random").checked)shuffle(arr);order=arr.slice(0,$("size").value==="all"?arr.length:Number($("size").value));index=0;selected={};$("settings").classList.add("hidden");$("done").classList.add("hidden");$("study").classList.remove("hidden");render()}
+function render(){
+  if(index>=order.length){finish();return}
+  const id=order[index],q=DATA[id],v=selected[id];
+  $("progress").textContent=(index+1)+" / "+order.length;
+  $("fill").style.width=(index/order.length*100)+"%";
+  $("question").textContent=q.q;
+  const container=$("options");
+  container.replaceChildren();
+  if(!q._choices)q._choices=shuffle(opts(q));
+  const choices=q._choices;
+  for(const a of choices){
+    const b=document.createElement("button");
+    b.type="button";
+    b.className="option"+(v&&v.a===a?" chosen":"");
+    b.textContent=a;
+    b.disabled=Boolean(v);
+    b.addEventListener("click",()=>choose(id,a,choices));
+    container.appendChild(b);
+  }
+  $("feedback").classList.toggle("hidden",!v);
+  if(v)$("feedback").textContent=(v.a===q.a?"✓ 正解":"× 不正解")+"｜正答："+q.a+"。 "+q.exp;
+  $("next").disabled=!v;
+  $("prev").disabled=index===0;
+  $("next").textContent=index===order.length-1?"結果を見る →":"次の問題 →";
+}
 function choose(id,a,choices){selected[id]={a,choices};if(a===DATA[id].a)missed.delete(id);else missed.add(id);save();render()}
 function finish(){$("study").classList.add("hidden");$("done").classList.remove("hidden");let correct=order.filter(i=>selected[i]?.a===DATA[i].a).length;$("summary").textContent=order.length+"問中 "+correct+"問正解。間違い履歴は保存しました。"}
 function reset(){$("study").classList.add("hidden");$("done").classList.add("hidden");$("settings").classList.remove("hidden")}
