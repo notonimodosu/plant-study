@@ -1,0 +1,3149 @@
+{
+  "total": 335,
+  "new": 184,
+  "retained_existing": 151,
+  "year_counts": {
+    "2012": 43,
+    "2013": 35,
+    "2014": 39,
+    "2015": 35,
+    "2016": 44,
+    "2017": 49,
+    "2018": 26,
+    "2020": 17,
+    "2021": 10,
+    "2022": 15,
+    "2023": 22
+  },
+  "kind_counts": {
+    "原題": 264,
+    "改題": 71
+  },
+  "held": [
+    {
+      "year": 2019,
+      "num": "Ⅱ-33A・関連",
+      "reason": "写真解答名を根拠にした関連問題。今回取得した年度別テキストに2019年度がなく、写真・解答との照合未完了。"
+    },
+    {
+      "year": 2016,
+      "num": "Ⅱ-1",
+      "reason": "タガラシとメハジキの生活史により複数正答の可能性。公式解答・原画像の再確認待ち。"
+    },
+    {
+      "year": 2020,
+      "num": "Ⅱ-13",
+      "reason": "ラン科とショウガ科の稔性雄蕊の扱いにより単一正答を保証できない。公式解答確認待ち。"
+    },
+    {
+      "year": 2022,
+      "num": "問33",
+      "reason": "既存問32-1と同じ本文・選択肢。原テキストの問33はタケ類の別問題であり、出典番号も不一致のため重複を除外。"
+    },
+    {
+      "year": 2023,
+      "num": "問46-2",
+      "reason": "公式正誤表（2024年度刊行問題集）で出題不適切のため削除。"
+    },
+    {
+      "year": 2012,
+      "num": "Ⅱ-12A",
+      "reason": "旧ユキノシタ科の範囲などを含め、広い形質記述の単一正答を確認できない。"
+    },
+    {
+      "year": 2012,
+      "num": "Ⅱ-12C",
+      "reason": "雄蕊数の変異を含めた選択肢の検証・公式解答確認待ち。"
+    },
+    {
+      "year": 2013,
+      "num": "Ⅱ-8H",
+      "reason": "アマチャヅルの掌状・鳥足状複葉の用語上の扱いによって複数候補になり得るため、公式解答確認待ち。"
+    },
+    {
+      "year": 2015,
+      "num": "Ⅱ-23",
+      "reason": "2013年度Ⅱ-23と同一の選択肢・同一内容（ガガイモの種髪）。新規追加の重複を避けて収録対象外。"
+    },
+    {
+      "year": 2013,
+      "num": "Ⅱ-5〜6",
+      "reason": "OCRで問題番号・本文の一部が欠落。原文と枝問の復元を推測で行わない。"
+    },
+    {
+      "year": 2013,
+      "num": "Ⅱ-26",
+      "reason": "2013年度という年度と、テキスト内のAPG IV（2016年）の記載が矛盾。原画像確認待ち。"
+    },
+    {
+      "year": 2014,
+      "num": "Ⅱ-27",
+      "reason": "Lamiaceaなど学名のOCR誤読があり、誤りを選ぶ問題の正答数が変わる可能性。"
+    },
+    {
+      "year": 2015,
+      "num": "Ⅱ-9",
+      "reason": "選択肢に通常2年で熟す代表種がなく、OCRや原問題の確認待ち。"
+    },
+    {
+      "year": 2015,
+      "num": "Ⅱ-10A・D／Ⅱ-15A",
+      "reason": "漿果・節果・液果の定義によって複数候補や該当なしになる可能性。"
+    },
+    {
+      "year": 2016,
+      "num": "Ⅱ-15G",
+      "reason": "ヘビノボラズの記述に複数の誤りが疑われ、単一正答を保証できない。"
+    },
+    {
+      "year": 2016,
+      "num": "Ⅱ-16A・B",
+      "reason": "頭状・円錐花序の選択肢に複数該当する可能性。"
+    },
+    {
+      "year": 2017,
+      "num": "Ⅱ-23・Ⅱ-28E・Ⅱ-29C",
+      "reason": "提供テキストに出題不適切のため削除と明記。"
+    },
+    {
+      "year": 2017,
+      "num": "Ⅱ-35",
+      "reason": "性染色体について現在の研究知見では複数正答になる可能性。"
+    },
+    {
+      "year": 2019,
+      "num": "全体",
+      "reason": "年度別専門テキスト未取得。保存PDFは存在するが、本文・解答の画像照合未完了。"
+    },
+    {
+      "year": 2023,
+      "num": "問47-11",
+      "reason": "公式正誤表で出題不適切のため削除。"
+    },
+    {
+      "year": 2023,
+      "num": "問48-1",
+      "reason": "公式正誤表で正答3→2。今回は未収録。"
+    }
+  ],
+  "duplicate_skips": [],
+  "official_verified": 0,
+  "answer_status": "公式解答未照合（学習用暫定正答）",
+  "questions": [
+    {
+      "id": "sp-2012-Ⅱ-1",
+      "year": 2012,
+      "num": "Ⅱ-1",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-2",
+      "year": 2012,
+      "num": "Ⅱ-2",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-3A",
+      "year": 2012,
+      "num": "Ⅱ-3A",
+      "kind": "改題",
+      "source_file": "H24.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-3B",
+      "year": 2012,
+      "num": "Ⅱ-3B",
+      "kind": "改題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-3C",
+      "year": 2012,
+      "num": "Ⅱ-3C",
+      "kind": "改題",
+      "source_file": "H24.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-3D",
+      "year": 2012,
+      "num": "Ⅱ-3D",
+      "kind": "改題",
+      "source_file": "H24.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-4",
+      "year": 2012,
+      "num": "Ⅱ-4",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-5",
+      "year": 2012,
+      "num": "Ⅱ-5",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-6A",
+      "year": 2012,
+      "num": "Ⅱ-6A",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-6B",
+      "year": 2012,
+      "num": "Ⅱ-6B",
+      "kind": "改題",
+      "source_file": "H24.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-7A",
+      "year": 2012,
+      "num": "Ⅱ-7A",
+      "kind": "改題",
+      "source_file": "H24.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-7B",
+      "year": 2012,
+      "num": "Ⅱ-7B",
+      "kind": "改題",
+      "source_file": "H24.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-10",
+      "year": 2012,
+      "num": "Ⅱ-10",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-11A",
+      "year": 2012,
+      "num": "Ⅱ-11A",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-11B",
+      "year": 2012,
+      "num": "Ⅱ-11B",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-11C",
+      "year": 2012,
+      "num": "Ⅱ-11C",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-12B",
+      "year": 2012,
+      "num": "Ⅱ-12B",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-13",
+      "year": 2012,
+      "num": "Ⅱ-13",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-14A",
+      "year": 2012,
+      "num": "Ⅱ-14A",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-14B",
+      "year": 2012,
+      "num": "Ⅱ-14B",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-14C",
+      "year": 2012,
+      "num": "Ⅱ-14C",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-15A",
+      "year": 2012,
+      "num": "Ⅱ-15A",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-15B",
+      "year": 2012,
+      "num": "Ⅱ-15B",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-15C",
+      "year": 2012,
+      "num": "Ⅱ-15C",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-15D",
+      "year": 2012,
+      "num": "Ⅱ-15D",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-16A",
+      "year": 2012,
+      "num": "Ⅱ-16A",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-16B",
+      "year": 2012,
+      "num": "Ⅱ-16B",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-16C",
+      "year": 2012,
+      "num": "Ⅱ-16C",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-16D",
+      "year": 2012,
+      "num": "Ⅱ-16D",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-16E",
+      "year": 2012,
+      "num": "Ⅱ-16E",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-16F",
+      "year": 2012,
+      "num": "Ⅱ-16F",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-17A",
+      "year": 2012,
+      "num": "Ⅱ-17A",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-17B",
+      "year": 2012,
+      "num": "Ⅱ-17B",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-17C",
+      "year": 2012,
+      "num": "Ⅱ-17C",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-17D",
+      "year": 2012,
+      "num": "Ⅱ-17D",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-17E",
+      "year": 2012,
+      "num": "Ⅱ-17E",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-17F",
+      "year": 2012,
+      "num": "Ⅱ-17F",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-18A",
+      "year": 2012,
+      "num": "Ⅱ-18A",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-18B",
+      "year": 2012,
+      "num": "Ⅱ-18B",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-18C",
+      "year": 2012,
+      "num": "Ⅱ-18C",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-19A",
+      "year": 2012,
+      "num": "Ⅱ-19A",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-19B",
+      "year": 2012,
+      "num": "Ⅱ-19B",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2012-Ⅱ-21",
+      "year": 2012,
+      "num": "Ⅱ-21",
+      "kind": "原題",
+      "source_file": "H24.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-1",
+      "year": 2013,
+      "num": "Ⅱ-1",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-2",
+      "year": 2013,
+      "num": "Ⅱ-2",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-4A",
+      "year": 2013,
+      "num": "Ⅱ-4A",
+      "kind": "改題",
+      "source_file": "H25.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-4B",
+      "year": 2013,
+      "num": "Ⅱ-4B",
+      "kind": "改題",
+      "source_file": "H25.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-4C",
+      "year": 2013,
+      "num": "Ⅱ-4C",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-4D",
+      "year": 2013,
+      "num": "Ⅱ-4D",
+      "kind": "改題",
+      "source_file": "H25.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-8A",
+      "year": 2013,
+      "num": "Ⅱ-8A",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-8B",
+      "year": 2013,
+      "num": "Ⅱ-8B",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-8C",
+      "year": 2013,
+      "num": "Ⅱ-8C",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-8D",
+      "year": 2013,
+      "num": "Ⅱ-8D",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-8E",
+      "year": 2013,
+      "num": "Ⅱ-8E",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-8G",
+      "year": 2013,
+      "num": "Ⅱ-8G",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-9A",
+      "year": 2013,
+      "num": "Ⅱ-9A",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-9B",
+      "year": 2013,
+      "num": "Ⅱ-9B",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-9C",
+      "year": 2013,
+      "num": "Ⅱ-9C",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-9D",
+      "year": 2013,
+      "num": "Ⅱ-9D",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-10",
+      "year": 2013,
+      "num": "Ⅱ-10",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-11",
+      "year": 2013,
+      "num": "Ⅱ-11",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-13B",
+      "year": 2013,
+      "num": "Ⅱ-13B",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-13C",
+      "year": 2013,
+      "num": "Ⅱ-13C",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-13D",
+      "year": 2013,
+      "num": "Ⅱ-13D",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-14A",
+      "year": 2013,
+      "num": "Ⅱ-14A",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-15",
+      "year": 2013,
+      "num": "Ⅱ-15",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-16",
+      "year": 2013,
+      "num": "Ⅱ-16",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-18",
+      "year": 2013,
+      "num": "Ⅱ-18",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-20",
+      "year": 2013,
+      "num": "Ⅱ-20",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-21",
+      "year": 2013,
+      "num": "Ⅱ-21",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-22",
+      "year": 2013,
+      "num": "Ⅱ-22",
+      "kind": "改題",
+      "source_file": "H25.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-23",
+      "year": 2013,
+      "num": "Ⅱ-23",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-24A",
+      "year": 2013,
+      "num": "Ⅱ-24A",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-24B",
+      "year": 2013,
+      "num": "Ⅱ-24B",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-25A",
+      "year": 2013,
+      "num": "Ⅱ-25A",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-25B",
+      "year": 2013,
+      "num": "Ⅱ-25B",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-25C",
+      "year": 2013,
+      "num": "Ⅱ-25C",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2013-Ⅱ-27",
+      "year": 2013,
+      "num": "Ⅱ-27",
+      "kind": "原題",
+      "source_file": "H25.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-1",
+      "year": 2014,
+      "num": "Ⅱ-1",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-3A",
+      "year": 2014,
+      "num": "Ⅱ-3A",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-3B",
+      "year": 2014,
+      "num": "Ⅱ-3B",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-3C",
+      "year": 2014,
+      "num": "Ⅱ-3C",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-4A",
+      "year": 2014,
+      "num": "Ⅱ-4A",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-4B",
+      "year": 2014,
+      "num": "Ⅱ-4B",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-4C",
+      "year": 2014,
+      "num": "Ⅱ-4C",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-4D",
+      "year": 2014,
+      "num": "Ⅱ-4D",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-4E",
+      "year": 2014,
+      "num": "Ⅱ-4E",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-5A",
+      "year": 2014,
+      "num": "Ⅱ-5A",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-5B",
+      "year": 2014,
+      "num": "Ⅱ-5B",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-5C",
+      "year": 2014,
+      "num": "Ⅱ-5C",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-5D",
+      "year": 2014,
+      "num": "Ⅱ-5D",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-5E",
+      "year": 2014,
+      "num": "Ⅱ-5E",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-6",
+      "year": 2014,
+      "num": "Ⅱ-6",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-7",
+      "year": 2014,
+      "num": "Ⅱ-7",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-8",
+      "year": 2014,
+      "num": "Ⅱ-8",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-12",
+      "year": 2014,
+      "num": "Ⅱ-12",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-14",
+      "year": 2014,
+      "num": "Ⅱ-14",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-15",
+      "year": 2014,
+      "num": "Ⅱ-15",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-16",
+      "year": 2014,
+      "num": "Ⅱ-16",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-17A",
+      "year": 2014,
+      "num": "Ⅱ-17A",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-17B",
+      "year": 2014,
+      "num": "Ⅱ-17B",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-17D",
+      "year": 2014,
+      "num": "Ⅱ-17D",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-17E",
+      "year": 2014,
+      "num": "Ⅱ-17E",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-18B",
+      "year": 2014,
+      "num": "Ⅱ-18B",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-18C",
+      "year": 2014,
+      "num": "Ⅱ-18C",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-20A",
+      "year": 2014,
+      "num": "Ⅱ-20A",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-20B",
+      "year": 2014,
+      "num": "Ⅱ-20B",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-20C",
+      "year": 2014,
+      "num": "Ⅱ-20C",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-20D",
+      "year": 2014,
+      "num": "Ⅱ-20D",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-21A",
+      "year": 2014,
+      "num": "Ⅱ-21A",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-21B",
+      "year": 2014,
+      "num": "Ⅱ-21B",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-21C",
+      "year": 2014,
+      "num": "Ⅱ-21C",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-22",
+      "year": 2014,
+      "num": "Ⅱ-22",
+      "kind": "改題",
+      "source_file": "H26.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-23A",
+      "year": 2014,
+      "num": "Ⅱ-23A",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-23B",
+      "year": 2014,
+      "num": "Ⅱ-23B",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-24",
+      "year": 2014,
+      "num": "Ⅱ-24",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2014-Ⅱ-26",
+      "year": 2014,
+      "num": "Ⅱ-26",
+      "kind": "原題",
+      "source_file": "H26.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-1",
+      "year": 2015,
+      "num": "Ⅱ-1",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-2",
+      "year": 2015,
+      "num": "Ⅱ-2",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-3",
+      "year": 2015,
+      "num": "Ⅱ-3",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-4",
+      "year": 2015,
+      "num": "Ⅱ-4",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-5",
+      "year": 2015,
+      "num": "Ⅱ-5",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-7",
+      "year": 2015,
+      "num": "Ⅱ-7",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-10B",
+      "year": 2015,
+      "num": "Ⅱ-10B",
+      "kind": "改題",
+      "source_file": "H27.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-10C",
+      "year": 2015,
+      "num": "Ⅱ-10C",
+      "kind": "改題",
+      "source_file": "H27.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-10E",
+      "year": 2015,
+      "num": "Ⅱ-10E",
+      "kind": "改題",
+      "source_file": "H27.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-10F",
+      "year": 2015,
+      "num": "Ⅱ-10F",
+      "kind": "改題",
+      "source_file": "H27.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-11",
+      "year": 2015,
+      "num": "Ⅱ-11",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-12A",
+      "year": 2015,
+      "num": "Ⅱ-12A",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-12B",
+      "year": 2015,
+      "num": "Ⅱ-12B",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-12C",
+      "year": 2015,
+      "num": "Ⅱ-12C",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-12E",
+      "year": 2015,
+      "num": "Ⅱ-12E",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-13A",
+      "year": 2015,
+      "num": "Ⅱ-13A",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-13C",
+      "year": 2015,
+      "num": "Ⅱ-13C",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-13D",
+      "year": 2015,
+      "num": "Ⅱ-13D",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-14A",
+      "year": 2015,
+      "num": "Ⅱ-14A",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-14C",
+      "year": 2015,
+      "num": "Ⅱ-14C",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-14D",
+      "year": 2015,
+      "num": "Ⅱ-14D",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-15B",
+      "year": 2015,
+      "num": "Ⅱ-15B",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-15C",
+      "year": 2015,
+      "num": "Ⅱ-15C",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-15D",
+      "year": 2015,
+      "num": "Ⅱ-15D",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-15E",
+      "year": 2015,
+      "num": "Ⅱ-15E",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-16A",
+      "year": 2015,
+      "num": "Ⅱ-16A",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-16B",
+      "year": 2015,
+      "num": "Ⅱ-16B",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-16C",
+      "year": 2015,
+      "num": "Ⅱ-16C",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-16D",
+      "year": 2015,
+      "num": "Ⅱ-16D",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-17A",
+      "year": 2015,
+      "num": "Ⅱ-17A",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-17B",
+      "year": 2015,
+      "num": "Ⅱ-17B",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-17D",
+      "year": 2015,
+      "num": "Ⅱ-17D",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-20",
+      "year": 2015,
+      "num": "Ⅱ-20",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-26",
+      "year": 2015,
+      "num": "Ⅱ-26",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2015-Ⅱ-27",
+      "year": 2015,
+      "num": "Ⅱ-27",
+      "kind": "原題",
+      "source_file": "H27.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-2",
+      "year": 2016,
+      "num": "Ⅱ-2",
+      "kind": "改題",
+      "source_file": "H28.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-3",
+      "year": 2016,
+      "num": "Ⅱ-3",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-4",
+      "year": 2016,
+      "num": "Ⅱ-4",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-5",
+      "year": 2016,
+      "num": "Ⅱ-5",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-7C",
+      "year": 2016,
+      "num": "Ⅱ-7C",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-8A",
+      "year": 2016,
+      "num": "Ⅱ-8A",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-8C",
+      "year": 2016,
+      "num": "Ⅱ-8C",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-9A",
+      "year": 2016,
+      "num": "Ⅱ-9A",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-9B",
+      "year": 2016,
+      "num": "Ⅱ-9B",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-9C",
+      "year": 2016,
+      "num": "Ⅱ-9C",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-10A",
+      "year": 2016,
+      "num": "Ⅱ-10A",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-10B",
+      "year": 2016,
+      "num": "Ⅱ-10B",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-10C",
+      "year": 2016,
+      "num": "Ⅱ-10C",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-10D",
+      "year": 2016,
+      "num": "Ⅱ-10D",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-10E",
+      "year": 2016,
+      "num": "Ⅱ-10E",
+      "kind": "改題",
+      "source_file": "H28.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-11A",
+      "year": 2016,
+      "num": "Ⅱ-11A",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-11B",
+      "year": 2016,
+      "num": "Ⅱ-11B",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-11C",
+      "year": 2016,
+      "num": "Ⅱ-11C",
+      "kind": "改題",
+      "source_file": "H28.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-11D",
+      "year": 2016,
+      "num": "Ⅱ-11D",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-12A",
+      "year": 2016,
+      "num": "Ⅱ-12A",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-12B",
+      "year": 2016,
+      "num": "Ⅱ-12B",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-12C",
+      "year": 2016,
+      "num": "Ⅱ-12C",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-12D",
+      "year": 2016,
+      "num": "Ⅱ-12D",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-12E",
+      "year": 2016,
+      "num": "Ⅱ-12E",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-13B",
+      "year": 2016,
+      "num": "Ⅱ-13B",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-14",
+      "year": 2016,
+      "num": "Ⅱ-14",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-15A",
+      "year": 2016,
+      "num": "Ⅱ-15A",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-15C",
+      "year": 2016,
+      "num": "Ⅱ-15C",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-15D",
+      "year": 2016,
+      "num": "Ⅱ-15D",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-15E",
+      "year": 2016,
+      "num": "Ⅱ-15E",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-15F",
+      "year": 2016,
+      "num": "Ⅱ-15F",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-16C",
+      "year": 2016,
+      "num": "Ⅱ-16C",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-16E",
+      "year": 2016,
+      "num": "Ⅱ-16E",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-18",
+      "year": 2016,
+      "num": "Ⅱ-18",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-19",
+      "year": 2016,
+      "num": "Ⅱ-19",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-20",
+      "year": 2016,
+      "num": "Ⅱ-20",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-21",
+      "year": 2016,
+      "num": "Ⅱ-21",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-22",
+      "year": 2016,
+      "num": "Ⅱ-22",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-23A",
+      "year": 2016,
+      "num": "Ⅱ-23A",
+      "kind": "改題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-23B",
+      "year": 2016,
+      "num": "Ⅱ-23B",
+      "kind": "改題",
+      "source_file": "H28.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-23C",
+      "year": 2016,
+      "num": "Ⅱ-23C",
+      "kind": "改題",
+      "source_file": "H28.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-23D",
+      "year": 2016,
+      "num": "Ⅱ-23D",
+      "kind": "改題",
+      "source_file": "H28.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-24",
+      "year": 2016,
+      "num": "Ⅱ-24",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2016-Ⅱ-25",
+      "year": 2016,
+      "num": "Ⅱ-25",
+      "kind": "原題",
+      "source_file": "H28.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-1",
+      "year": 2017,
+      "num": "Ⅱ-1",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-2",
+      "year": 2017,
+      "num": "Ⅱ-2",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-3",
+      "year": 2017,
+      "num": "Ⅱ-3",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-4",
+      "year": 2017,
+      "num": "Ⅱ-4",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-5",
+      "year": 2017,
+      "num": "Ⅱ-5",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-6",
+      "year": 2017,
+      "num": "Ⅱ-6",
+      "kind": "改題",
+      "source_file": "H29.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-7",
+      "year": 2017,
+      "num": "Ⅱ-7",
+      "kind": "改題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-8",
+      "year": 2017,
+      "num": "Ⅱ-8",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-9",
+      "year": 2017,
+      "num": "Ⅱ-9",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-11",
+      "year": 2017,
+      "num": "Ⅱ-11",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-12",
+      "year": 2017,
+      "num": "Ⅱ-12",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-13",
+      "year": 2017,
+      "num": "Ⅱ-13",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-14",
+      "year": 2017,
+      "num": "Ⅱ-14",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-15",
+      "year": 2017,
+      "num": "Ⅱ-15",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-16",
+      "year": 2017,
+      "num": "Ⅱ-16",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-17",
+      "year": 2017,
+      "num": "Ⅱ-17",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-18",
+      "year": 2017,
+      "num": "Ⅱ-18",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-21A",
+      "year": 2017,
+      "num": "Ⅱ-21A",
+      "kind": "改題",
+      "source_file": "H29.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-21B",
+      "year": 2017,
+      "num": "Ⅱ-21B",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-21C",
+      "year": 2017,
+      "num": "Ⅱ-21C",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-22",
+      "year": 2017,
+      "num": "Ⅱ-22",
+      "kind": "改題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-24",
+      "year": 2017,
+      "num": "Ⅱ-24",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-25",
+      "year": 2017,
+      "num": "Ⅱ-25",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-26A",
+      "year": 2017,
+      "num": "Ⅱ-26A",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-26B",
+      "year": 2017,
+      "num": "Ⅱ-26B",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-26C",
+      "year": 2017,
+      "num": "Ⅱ-26C",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-26D",
+      "year": 2017,
+      "num": "Ⅱ-26D",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-26E",
+      "year": 2017,
+      "num": "Ⅱ-26E",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-27A",
+      "year": 2017,
+      "num": "Ⅱ-27A",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-27B",
+      "year": 2017,
+      "num": "Ⅱ-27B",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-27C",
+      "year": 2017,
+      "num": "Ⅱ-27C",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-27D",
+      "year": 2017,
+      "num": "Ⅱ-27D",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-28A",
+      "year": 2017,
+      "num": "Ⅱ-28A",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-28B",
+      "year": 2017,
+      "num": "Ⅱ-28B",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-28C",
+      "year": 2017,
+      "num": "Ⅱ-28C",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-28D",
+      "year": 2017,
+      "num": "Ⅱ-28D",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-29B",
+      "year": 2017,
+      "num": "Ⅱ-29B",
+      "kind": "改題",
+      "source_file": "H29.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-29D",
+      "year": 2017,
+      "num": "Ⅱ-29D",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-30",
+      "year": 2017,
+      "num": "Ⅱ-30",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-31",
+      "year": 2017,
+      "num": "Ⅱ-31",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-32",
+      "year": 2017,
+      "num": "Ⅱ-32",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-33",
+      "year": 2017,
+      "num": "Ⅱ-33",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-34",
+      "year": 2017,
+      "num": "Ⅱ-34",
+      "kind": "改題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-37",
+      "year": 2017,
+      "num": "Ⅱ-37",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-38",
+      "year": 2017,
+      "num": "Ⅱ-38",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-39",
+      "year": 2017,
+      "num": "Ⅱ-39",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-40A",
+      "year": 2017,
+      "num": "Ⅱ-40A",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-40B",
+      "year": 2017,
+      "num": "Ⅱ-40B",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2017-Ⅱ-40C",
+      "year": 2017,
+      "num": "Ⅱ-40C",
+      "kind": "原題",
+      "source_file": "H29.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-1",
+      "year": 2018,
+      "num": "Ⅱ-1",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-2",
+      "year": 2018,
+      "num": "Ⅱ-2",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-3",
+      "year": 2018,
+      "num": "Ⅱ-3",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-5",
+      "year": 2018,
+      "num": "Ⅱ-5",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-6",
+      "year": 2018,
+      "num": "Ⅱ-6",
+      "kind": "改題",
+      "source_file": "H30.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-7A",
+      "year": 2018,
+      "num": "Ⅱ-7A",
+      "kind": "改題",
+      "source_file": "H30.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-7B",
+      "year": 2018,
+      "num": "Ⅱ-7B",
+      "kind": "改題",
+      "source_file": "H30.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-9A",
+      "year": 2018,
+      "num": "Ⅱ-9A",
+      "kind": "改題",
+      "source_file": "H30.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-9B",
+      "year": 2018,
+      "num": "Ⅱ-9B",
+      "kind": "改題",
+      "source_file": "H30.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-12",
+      "year": 2018,
+      "num": "Ⅱ-12",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-13",
+      "year": 2018,
+      "num": "Ⅱ-13",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-14",
+      "year": 2018,
+      "num": "Ⅱ-14",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-15",
+      "year": 2018,
+      "num": "Ⅱ-15",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-16",
+      "year": 2018,
+      "num": "Ⅱ-16",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-17",
+      "year": 2018,
+      "num": "Ⅱ-17",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-18",
+      "year": 2018,
+      "num": "Ⅱ-18",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-19A",
+      "year": 2018,
+      "num": "Ⅱ-19A",
+      "kind": "改題",
+      "source_file": "H30.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-19B",
+      "year": 2018,
+      "num": "Ⅱ-19B",
+      "kind": "改題",
+      "source_file": "H30.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-19C",
+      "year": 2018,
+      "num": "Ⅱ-19C",
+      "kind": "改題",
+      "source_file": "H30.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-20C",
+      "year": 2018,
+      "num": "Ⅱ-20C",
+      "kind": "改題",
+      "source_file": "H30.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-21",
+      "year": 2018,
+      "num": "Ⅱ-21",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-22",
+      "year": 2018,
+      "num": "Ⅱ-22",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-23",
+      "year": 2018,
+      "num": "Ⅱ-23",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-24",
+      "year": 2018,
+      "num": "Ⅱ-24",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-25",
+      "year": 2018,
+      "num": "Ⅱ-25",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2018-Ⅱ-26",
+      "year": 2018,
+      "num": "Ⅱ-26",
+      "kind": "原題",
+      "source_file": "H30.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-1A",
+      "year": 2020,
+      "num": "Ⅱ-1A",
+      "kind": "改題",
+      "source_file": "2020(1).txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-1B",
+      "year": 2020,
+      "num": "Ⅱ-1B",
+      "kind": "改題",
+      "source_file": "2020(1).txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-1C",
+      "year": 2020,
+      "num": "Ⅱ-1C",
+      "kind": "改題",
+      "source_file": "2020(1).txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-2A",
+      "year": 2020,
+      "num": "Ⅱ-2A",
+      "kind": "改題",
+      "source_file": "2020(1).txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-2B",
+      "year": 2020,
+      "num": "Ⅱ-2B",
+      "kind": "改題",
+      "source_file": "2020(1).txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-2C",
+      "year": 2020,
+      "num": "Ⅱ-2C",
+      "kind": "改題",
+      "source_file": "2020(1).txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-3",
+      "year": 2020,
+      "num": "Ⅱ-3",
+      "kind": "原題",
+      "source_file": "2020(1).txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-8",
+      "year": 2020,
+      "num": "Ⅱ-8",
+      "kind": "原題",
+      "source_file": "2020(1).txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-9",
+      "year": 2020,
+      "num": "Ⅱ-9",
+      "kind": "原題",
+      "source_file": "2020(1).txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-10",
+      "year": 2020,
+      "num": "Ⅱ-10",
+      "kind": "原題",
+      "source_file": "2020(1).txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-11",
+      "year": 2020,
+      "num": "Ⅱ-11",
+      "kind": "原題",
+      "source_file": "2020(1).txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-12",
+      "year": 2020,
+      "num": "Ⅱ-12",
+      "kind": "原題",
+      "source_file": "2020(1).txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-15B",
+      "year": 2020,
+      "num": "Ⅱ-15B",
+      "kind": "改題",
+      "source_file": "2020(1).txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-16",
+      "year": 2020,
+      "num": "Ⅱ-16",
+      "kind": "原題",
+      "source_file": "2020(1).txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-17",
+      "year": 2020,
+      "num": "Ⅱ-17",
+      "kind": "原題",
+      "source_file": "2020(1).txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-19B",
+      "year": 2020,
+      "num": "Ⅱ-19B",
+      "kind": "改題",
+      "source_file": "2020(1).txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2020-Ⅱ-19D",
+      "year": 2020,
+      "num": "Ⅱ-19D",
+      "kind": "改題",
+      "source_file": "2020(1).txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2021-問21",
+      "year": 2021,
+      "num": "問21",
+      "kind": "原題",
+      "source_file": "2021.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2021-問23",
+      "year": 2021,
+      "num": "問23",
+      "kind": "原題",
+      "source_file": "2021.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2021-問24",
+      "year": 2021,
+      "num": "問24",
+      "kind": "原題",
+      "source_file": "2021.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2021-問25",
+      "year": 2021,
+      "num": "問25",
+      "kind": "原題",
+      "source_file": "2021.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2021-問27",
+      "year": 2021,
+      "num": "問27",
+      "kind": "原題",
+      "source_file": "2021.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2021-問28",
+      "year": 2021,
+      "num": "問28",
+      "kind": "原題",
+      "source_file": "2021.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2021-問29",
+      "year": 2021,
+      "num": "問29",
+      "kind": "原題",
+      "source_file": "2021.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2021-問32",
+      "year": 2021,
+      "num": "問32",
+      "kind": "原題",
+      "source_file": "2021.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2021-問33",
+      "year": 2021,
+      "num": "問33",
+      "kind": "原題",
+      "source_file": "2021.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2021-問34",
+      "year": 2021,
+      "num": "問34",
+      "kind": "原題",
+      "source_file": "2021.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問20",
+      "year": 2022,
+      "num": "問20",
+      "kind": "原題",
+      "source_file": "2022.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問21",
+      "year": 2022,
+      "num": "問21",
+      "kind": "原題",
+      "source_file": "2022.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問22",
+      "year": 2022,
+      "num": "問22",
+      "kind": "原題",
+      "source_file": "2022.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問23",
+      "year": 2022,
+      "num": "問23",
+      "kind": "原題",
+      "source_file": "2022.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問25",
+      "year": 2022,
+      "num": "問25",
+      "kind": "原題",
+      "source_file": "2022.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問28",
+      "year": 2022,
+      "num": "問28",
+      "kind": "原題",
+      "source_file": "2022.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問29",
+      "year": 2022,
+      "num": "問29",
+      "kind": "原題",
+      "source_file": "2022.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問30",
+      "year": 2022,
+      "num": "問30",
+      "kind": "原題",
+      "source_file": "2022.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問31",
+      "year": 2022,
+      "num": "問31",
+      "kind": "原題",
+      "source_file": "2022.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問32-1",
+      "year": 2022,
+      "num": "問32-1",
+      "kind": "改題",
+      "source_file": "2022.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問38",
+      "year": 2022,
+      "num": "問38",
+      "kind": "原題",
+      "source_file": "2022.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問55-1",
+      "year": 2022,
+      "num": "問55-1",
+      "kind": "改題",
+      "source_file": "2022.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問55-2",
+      "year": 2022,
+      "num": "問55-2",
+      "kind": "改題",
+      "source_file": "2022.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問55-3",
+      "year": 2022,
+      "num": "問55-3",
+      "kind": "改題",
+      "source_file": "2022.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2022-問55-4",
+      "year": 2022,
+      "num": "問55-4",
+      "kind": "改題",
+      "source_file": "2022.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問21",
+      "year": 2023,
+      "num": "問21",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問22",
+      "year": 2023,
+      "num": "問22",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問23",
+      "year": 2023,
+      "num": "問23",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問24",
+      "year": 2023,
+      "num": "問24",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問25",
+      "year": 2023,
+      "num": "問25",
+      "kind": "改題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問27",
+      "year": 2023,
+      "num": "問27",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問28",
+      "year": 2023,
+      "num": "問28",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問30-1",
+      "year": 2023,
+      "num": "問30-1",
+      "kind": "改題",
+      "source_file": "2023.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問30-3",
+      "year": 2023,
+      "num": "問30-3",
+      "kind": "改題",
+      "source_file": "2023.txt",
+      "correct_option": 4,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問31",
+      "year": 2023,
+      "num": "問31",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問32",
+      "year": 2023,
+      "num": "問32",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問33",
+      "year": 2023,
+      "num": "問33",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問34",
+      "year": 2023,
+      "num": "問34",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問37",
+      "year": 2023,
+      "num": "問37",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問38",
+      "year": 2023,
+      "num": "問38",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問39",
+      "year": 2023,
+      "num": "問39",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問41",
+      "year": 2023,
+      "num": "問41",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問43",
+      "year": 2023,
+      "num": "問43",
+      "kind": "原題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問44-1",
+      "year": 2023,
+      "num": "問44-1",
+      "kind": "改題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問44-3",
+      "year": 2023,
+      "num": "問44-3",
+      "kind": "改題",
+      "source_file": "2023.txt",
+      "correct_option": 3,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問47-2",
+      "year": 2023,
+      "num": "問47-2",
+      "kind": "改題",
+      "source_file": "2023.txt",
+      "correct_option": 1,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    },
+    {
+      "id": "sp-2023-問47-5",
+      "year": 2023,
+      "num": "問47-5",
+      "kind": "改題",
+      "source_file": "2023.txt",
+      "correct_option": 2,
+      "answer_status": "公式解答未照合（学習用暫定正答）"
+    }
+  ]
+}
