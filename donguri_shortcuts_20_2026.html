@@ -1,0 +1,40 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#355c3a"><title>ドングリ識別・最短攻略20問</title><style>*{box-sizing:border-box}body{margin:0;background:#f4f7f1;color:#203125;font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif}main{max-width:600px;margin:auto;padding:18px 16px 40px}h1{font-size:24px;margin:8px 0}p{line-height:1.6}.muted{color:#607263;font-size:14px}.panel{background:white;border:1px solid #d8e5d7;border-radius:18px;padding:18px;margin:15px 0;box-shadow:0 3px 12px #2139210b}button,select{font:inherit;border-radius:12px;padding:13px;border:1px solid #bfd2bf;background:white;color:#21412b}button{cursor:pointer}button:disabled{opacity:.4}.primary{background:#355f40;color:white;border-color:#355f40;font-weight:750}.wide{width:100%;margin:7px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid button{width:100%}.top{display:flex;justify-content:space-between;align-items:center;gap:8px}.top button{font-size:13px;padding:9px}.q{font-size:21px;font-weight:750;line-height:1.5;margin:13px 0 20px}.option{display:block;text-align:left;width:100%;margin:9px 0;line-height:1.45}.chosen{border:2px solid #355f40;background:#e5f1e5}.answer{background:#edf4e9;border-radius:12px;padding:13px;margin-top:13px;line-height:1.7}.hidden{display:none}.pill{display:inline-block;border-radius:40px;background:#e1ebe0;padding:6px 11px;font-size:12px}a{color:#376442}#bottom{margin-top:7px}label{display:block;margin:14px 0}.bar{height:7px;border-radius:6px;background:#dce7d9;overflow:hidden;margin:12px 0}.bar>div{height:100%;background:#45764c;transition:width .2s}</style></head><body><main><div class="top"><a href="./index.html">‹ 学習ホームへ</a><span class="pill">生物分類技能検定2級</span></div><h1>🌰 ドングリ識別・最短攻略</h1><p class="muted">ドングリの決め手と二択攻略／全20問</p><section id="settings" class="panel"><strong>出題設定</strong><label>出題範囲<br><select id="size"><option value="10">10問</option><option value="20">20問</option><option value="all">全20問</option></select></label><label><input id="miss" type="checkbox"> 前回までに間違えた問題だけ</label><label><input id="random" type="checkbox" checked> 出題順をシャッフル</label><button class="primary wide" id="start">学習スタート</button><p class="muted">一問ずつ正誤判定。途中で「一問戻る」も使えます。間違い履歴はこのブラウザに保存。</p></section><section id="study" class="panel hidden"><div class="top"><span id="progress" class="muted"></span><button id="home">設定へ戻る</button></div><div class="bar"><div id="fill"></div></div><div class="q" id="question"></div><div id="options"></div><div class="answer hidden" id="feedback"></div><div id="bottom" class="grid"><button id="prev">← 一問戻る</button><button class="primary" id="next" disabled>次の問題 →</button></div></section><section id="done" class="panel hidden"><h2>学習結果</h2><p id="summary"></p><button class="primary wide" id="again">設定へ戻る</button></section></main><script>
+const DATA=[{"q":"葉裏が灰白色の星状毛で白っぽい。最有力の答えは？","a":"アベマキ","exp":"クヌギと比較して葉裏の毛が有効","choices":["アベマキ","コナラ","アラカシ","クヌギ"]},{"q":"葉柄が極めて短く、葉の基部が耳状。最有力の答えは？","a":"ミズナラ","exp":"コナラとの識別で強い","choices":["ミズナラ","アラカシ","クヌギ","マテバシイ"]},{"q":"小さく厚い葉、海岸性。最有力の答えは？","a":"ウバメガシ","exp":"他のカシ類から絞れる","choices":["ウバメガシ","クヌギ","マテバシイ","スダジイ"]},{"q":"葉裏に金褐色の鱗状毛。最有力の答えは？","a":"シリブカガシ","exp":"特徴的な葉裏","choices":["シリブカガシ","マテバシイ","スダジイ","カシワ"]},{"q":"殻斗が堅果を包み熟すと裂開。最有力の答えは？","a":"シイ属","exp":"スダジイ・ツブラジイが候補","choices":["シイ属","スダジイ","カシワ","クリ"]},{"q":"大きく寸胴型の堅果と大きい厚い葉。最有力の答えは？","a":"マテバシイ","exp":"同心円状の殻斗","choices":["マテバシイ","クリ","シラカシ","アベマキ"]},{"q":"大きく波状に切れ込む葉。最有力の答えは？","a":"カシワ","exp":"柏餅の葉を連想","choices":["カシワ","シラカシ","アベマキ","ミズナラ"]},{"q":"殻斗の鱗片が長く反り返る。最有力の答えは？","a":"クヌギ・アベマキ","exp":"トゲトゲの帽子","choices":["クヌギ・アベマキ","コナラ","アラカシ","クヌギ"]},{"q":"殻斗の横方向の輪紋。最有力の答えは？","a":"カシ類","exp":"アラカシ、シラカシ、ウラジロガシ等","choices":["カシ類","アラカシ","クヌギ","マテバシイ"]},{"q":"長い鋭い刺のイガに複数の堅果。最有力の答えは？","a":"クリ","exp":"クリの殻斗は実を包む","choices":["クリ","クヌギ","マテバシイ","スダジイ"]},{"q":"クヌギとの二択で葉裏が白い。最有力の答えは？","a":"アベマキ","exp":"クヌギは葉裏が比較的緑色","choices":["アベマキ","マテバシイ","スダジイ","カシワ"]},{"q":"コナラとの二択で葉柄が極めて短い。最有力の答えは？","a":"ミズナラ","exp":"葉の基部も参考","choices":["ミズナラ","スダジイ","カシワ","クリ"]},{"q":"スダジイとツブラジイに共通する属。最有力の答えは？","a":"シイ属","exp":"同種ではない","choices":["シイ属","カシワ","クリ","シラカシ"]},{"q":"シラカシとアラカシに共通するグループ。最有力の答えは？","a":"常緑カシ類","exp":"どちらもコナラ属","choices":["常緑カシ類","クリ","シラカシ","アベマキ"]},{"q":"常緑樹で殻斗の輪紋が顕著。最有力の答えは？","a":"カシ類","exp":"種の確定は別の特徴も必要","choices":["カシ類","コナラ","アラカシ","クヌギ"]},{"q":"シイ属で小さく丸い堅果が多い。最有力の答えは？","a":"ツブラジイ","exp":"スダジイとの差は傾向であり確定不可","choices":["ツブラジイ","アラカシ","クヌギ","マテバシイ"]},{"q":"細く鋭い鋸歯の葉＋長い殻斗鱗片。最有力の答えは？","a":"クヌギ・アベマキ","exp":"葉裏を追加確認","choices":["クヌギ・アベマキ","クヌギ","マテバシイ","スダジイ"]},{"q":"厚い小葉で海岸性。最有力の答えは？","a":"ウバメガシ","exp":"特徴の組合せが有効","choices":["ウバメガシ","マテバシイ","スダジイ","カシワ"]},{"q":"葉裏に金褐色の鱗状毛。最有力の答えは？","a":"シリブカガシ","exp":"選択肢にあれば優先して確認","choices":["シリブカガシ","スダジイ","カシワ","クリ"]},{"q":"堅果を包む殻斗が成熟時に裂ける。最有力の答えは？","a":"シイ類","exp":"まずシイ類へ絞り込む","choices":["シイ類","カシワ","クリ","シラカシ"]}];
+const KEY="donguri_shortcuts_missed_v1";
+let missed=new Set();try{missed=new Set(JSON.parse(localStorage.getItem(KEY)||"[]"))}catch(e){}
+let order=[],index=0,selected={};
+const $=id=>document.getElementById(id);
+function save(){try{localStorage.setItem(KEY,JSON.stringify([...missed]))}catch(e){}}
+function shuffle(a){for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function opts(q){return q.choices.slice()}
+function start(){DATA.forEach(q=>delete q._choices);let arr=DATA.map((_,i)=>i);if($("miss").checked)arr=arr.filter(i=>missed.has(i));if(!arr.length){alert("復習対象の間違い問題はまだありません");return}if($("random").checked)shuffle(arr);order=arr.slice(0,$("size").value==="all"?arr.length:Number($("size").value));index=0;selected={};$("settings").classList.add("hidden");$("done").classList.add("hidden");$("study").classList.remove("hidden");render()}
+function render(){
+  if(index>=order.length){finish();return}
+  const id=order[index],q=DATA[id],v=selected[id];
+  $("progress").textContent=(index+1)+" / "+order.length;
+  $("fill").style.width=(index/order.length*100)+"%";
+  $("question").textContent=q.q;
+  const container=$("options");
+  container.replaceChildren();
+  if(!q._choices)q._choices=shuffle(opts(q));
+  const choices=q._choices;
+  for(const a of choices){
+    const b=document.createElement("button");
+    b.type="button";
+    b.className="option"+(v&&v.a===a?" chosen":"");
+    b.textContent=a;
+    b.disabled=Boolean(v);
+    b.addEventListener("click",()=>choose(id,a,choices));
+    container.appendChild(b);
+  }
+  $("feedback").classList.toggle("hidden",!v);
+  if(v)$("feedback").textContent=(v.a===q.a?"✓ 正解":"× 不正解")+"｜正答："+q.a+"。 "+q.exp;
+  $("next").disabled=!v;
+  $("prev").disabled=index===0;
+  $("next").textContent=index===order.length-1?"結果を見る →":"次の問題 →";
+}
+function choose(id,a,choices){selected[id]={a,choices};if(a===DATA[id].a)missed.delete(id);else missed.add(id);save();render()}
+function finish(){$("study").classList.add("hidden");$("done").classList.remove("hidden");let correct=order.filter(i=>selected[i]?.a===DATA[i].a).length;$("summary").textContent=order.length+"問中 "+correct+"問正解。間違い履歴は保存しました。"}
+function reset(){$("study").classList.add("hidden");$("done").classList.add("hidden");$("settings").classList.remove("hidden")}
+$("start").onclick=start;$("home").onclick=reset;$("again").onclick=reset;$("prev").onclick=()=>{if(index>0){index--;render()}};$("next").onclick=()=>{if(selected[order[index]]){index++;render()}};
+</script></body></html>
